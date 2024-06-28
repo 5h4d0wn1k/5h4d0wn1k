@@ -1,32 +1,48 @@
-Hi 👋 My name is Nikhil Nagpure
-===============================
+# Hi 👋 I'm Nikhil Nagpure
 
-Cyber security analyst & Pentester
-----------------------------------
+## Cyber Security Analyst & Pentester
 
-* 🌍  I'm based in India
-* 🖥️  See my portfolio at [Portfolio](http://https://5h4d0wn1k.github.io/personal-portfolio/)
-* ✉️  You can contact me at [nikhilnagpure203@gmail.com](mailto:nikhilnagpure203@gmail.com)
-* 🧠  I'm learning Security Hardening and pentesting
-* 🤝  I'm open to collaborating on Cybersecurity related projects
+* 🌍 Based in India
+* 🎓 Pursuing B.Tech in Computer Science with specialization in Cyber Security and Digital Forensics at VIT Bhopal
+* 💼 Seeking opportunities in Cybersecurity
+* 🖥️ Check out my [Portfolio](https://5h4d0wn1k.github.io/personal-portfolio/)
+* ✉️ Contact me at [nikhilnagpure203@gmail.com](mailto:nikhilnagpure203@gmail.com)
+* 🧠 Currently learning Security Hardening and Penetration Testing
+* 🤝 Open to collaborating on Cybersecurity related projects
 
-### Skills
+## Skills
+
+- 💻 Programming: Python, C++, Java
+- 🛠️ Tools: Git, Linux, Oracle, Raspberry Pi
+- 🔐 Certifications: CEH (Certified Ethical Hacker), CNSP
+
+## Projects
+
+- 🛡️ ML-based XSS Attack Detection System
+- ☁️ Blockchain-integrated Decentralized Cloud Storage
+- 🔍 Vulnerability Assessment and Penetration Testing tools
+
+## Certifications
+
+- Certified Ethical Hacker (CEH) - EC-Council
+- CNSP - The SecOps Group
+- Practical Ethical Hacking - TCM Security
+
+## Let's Connect!
 
 <p align="left">
-<a href="https://www.python.org/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/python-colored.svg" width="36" height="36" alt="Python" /></a><a href="https://docs.microsoft.com/en-us/cpp/?view=msvc-170" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/cplusplus-colored.svg" width="36" height="36" alt="C++" /></a><a href="https://www.oracle.com/java/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/java-colored.svg" width="36" height="36" alt="Java" /></a><a href="https://git-scm.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/git-colored.svg" width="36" height="36" alt="Git" /></a><a href="https://www.oracle.com/uk/index.html" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/oracle-colored.svg" width="36" height="36" alt="Oracle" /></a><a href="https://www.linux.org" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/linux-colored.svg" width="36" height="36" alt="Linux" /></a><a href="https://www.raspberrypi.org/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/raspberrypi-colored.svg" width="36" height="36" alt="Raspberry Pi" /></a>
+  <a href="https://www.github.com/5h4d0wn1k" target="_blank" rel="noreferrer">
+    <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/github.svg" width="32" height="32" />
+  </a>
+  <a href="https://www.linkedin.com/in/nikhilnagpure24/" target="_blank" rel="noreferrer">
+    <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/linkedin.svg" width="32" height="32" />
+  </a>
 </p>
 
-### Socials
-
-<p align="left"> <a href="https://www.github.com/5h4d0wn1k" target="_blank" rel="noreferrer"> <picture> <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/github-dark.svg" /> <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/github.svg" /> <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/github.svg" width="32" height="32" /> </picture> </a> <a href="https://www.linkedin.com/in/nikhilnagpure24/" target="_blank" rel="noreferrer"> <picture> <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/linkedin-dark.svg" /> <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/linkedin.svg" /> <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/linkedin.svg" width="32" height="32" /> </picture> </a></p>
-### Badges
-
-<b>My GitHub Stats</b>
+## GitHub Stats
 
 <a href="http://www.github.com/5h4d0wn1k"><img src="https://github-readme-stats.vercel.app/api?username=5h4d0wn1k&show_icons=true&hide=prs,issues,contribs&title_color=0891b2&text_color=ffffff&icon_color=0891b2&bg_color=1c1917&hide_border=true&show_icons=true" alt="5h4d0wn1k's GitHub stats" /></a>
 
 <a href="http://www.github.com/5h4d0wn1k"><img src="https://github-readme-streak-stats.herokuapp.com/?user=5h4d0wn1k&stroke=ffffff&background=1c1917&ring=0891b2&fire=0891b2&currStreakNum=ffffff&currStreakLabel=0891b2&sideNums=ffffff&sideLabels=ffffff&dates=ffffff&hide_border=true" /></a>
 
-<a href="http://www.github.com/5h4d0wn1k"><img src="https://github-readme-activity-graph.cyclic.app/graph?username=5h4d0wn1k&bg_color=1c1917&color=ffffff&line=0891b2&point=ffffff&area_color=1c1917&area=true&hide_border=true&custom_title=GitHub%20Commits%20Graph" alt="GitHub Commits Graph" /></a>
-
-<a href="https://github.com/5h4d0wn1k" align="left"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=5h4d0wn1k&langs_count=10&title_color=0891b2&text_color=ffffff&icon_color=0891b2&bg_color=1c1917&hide_border=true&locale=en&custom_title=Top%20%Languages" alt="Top Languages" /></a>
+<a href="https://github.com/5h4d0wn1k" align="left"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=5h4d0wn1k&langs_count=10&title_color=0891b2&text_color=ffffff&icon_color=0891b2&bg_color=1c1917&hide_border=true&locale=en&custom_title=Top%20Languages" alt="Top Languages" /></a>
