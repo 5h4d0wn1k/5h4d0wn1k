@@ -5,8 +5,6 @@
 * 🌍 Based in India
 * 🎓 Pursuing B.Tech in Computer Science with specialization in Cyber Security and Digital Forensics at VIT Bhopal
 * 💼 Seeking opportunities in Cybersecurity
-* 🖥️ Check out my [Portfolio](https://5h4d0wn1k.github.io/personal-portfolio/)
-* ✉️ Contact me at [nikhilnagpure203@gmail.com](mailto:nikhilnagpure203@gmail.com)
 * 🧠 Currently learning Security Hardening and Penetration Testing
 * 🤝 Open to collaborating on Cybersecurity related projects
 
