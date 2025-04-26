@@ -4,7 +4,7 @@
 
 - 🌍 Based in India
 - 🎓 Pursuing B.Tech in Computer Science with specialization in Cyber Security and Digital Forensics at VIT Bhopal
-- 💼 Founder & CEO of [Shadownik](https://www.shadownik.online), offering cybersecurity solutions, web development, and digital marketing services.
+- 💼 Freelancer of [Shadownik](https://www.shadownik.online), offering cybersecurity solutions, web development, and digital marketing services.
 - 🧠 Passionate about Security Hardening, Penetration Testing, and Blockchain
 - 🤝 Open to collaborating on Cybersecurity and Blockchain-based projects
 
