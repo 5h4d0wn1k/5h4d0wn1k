@@ -98,7 +98,7 @@ currently_building:
 ## GitHub Analytics
 
 <div align="center">
-  <img height="170em" src="https://github-readme-stats.vercel.app/api?username=5h4d0wn1k&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true" />
+  <img height="170em" src="https://github-readme-stats.vercel.app/api?username=5h4d0wn1k&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" />
   <img height="170em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=5h4d0wn1k&layout=compact&langs_count=10&theme=tokyonight&hide_border=true" />
   <br/>
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=5h4d0wn1k&theme=tokyonight&hide_border=true" />
