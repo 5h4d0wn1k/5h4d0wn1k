@@ -28,7 +28,7 @@ education: B.Tech CSE (Cybersecurity & Digital Forensics), VIT Bhopal (2021-2025
 current_roles:
   - Founder & CEO @ Shadownik
   - Co-Founder @ CuboidSoft
-  - Full-Stack Developer @ Pawan Technologies
+  - Founding SWE @ Pawan Technologies
 focus_areas:
   - Offensive Security
   - API Security Engineering
