@@ -56,7 +56,7 @@ currently_building:
 - Delivered secure production systems and offensive security assessments for real-world clients.
 - Leading product development for ApiSecPlatform and multiple automation-focused services.
 
-### Full-Stack Developer - Pawan Technologies (Sep 2025 - Present)
+### Founding SWE - Pawan Technologies (Sep 2025 - Present)
 - Developing responsive production web apps and scalable backend APIs.
 - Building integrations, database workflows, and cloud-ready deployment pipelines.
 
