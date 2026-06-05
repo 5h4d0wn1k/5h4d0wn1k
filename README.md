@@ -2,7 +2,7 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0F172A,0891b2,22d3ee&height=220&section=header&text=Nikhil%20Nagpure&fontSize=52&fontColor=ffffff&animation=fadeIn&fontAlignY=36&desc=Founder%20%7C%20Cybersecurity%20Analyst%20%7C%20Full-Stack%20Developer&descAlignY=58&descAlign=50" />
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=600&size=22&duration=2800&pause=900&color=22D3EE&center=true&vCenter=true&width=900&lines=Cybersecurity+Analyst+%7C+Offensive+Security+Practitioner;Founder+%40+Shadownik+%7C+Co-Founder+%40+CuboidSoft;Building+secure%2C+scalable+full-stack+products;Hardware+Security+%2B+IoT+Pentesting+Explorer)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=600&size=22&duration=2800&pause=900&color=22D3EE&center=true&vCenter=true&width=900&lines=Cybersecurity+Analyst+%7C+Offensive+Security+Practitioner;Founder+%40+Shadownik;Building+secure%2C+scalable+full-stack+products;Hardware+Security+%2B+IoT+Pentesting+Explorer)](https://git.io/typing-svg)
 
 <p>
   <a href="https://www.linkedin.com/in/nikhilnagpure24/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
@@ -99,7 +99,6 @@ currently_building:
 - LinkedIn: [linkedin.com/in/nikhilnagpure24](https://www.linkedin.com/in/nikhilnagpure24)
 - GitHub: [github.com/5h4d0wn1k](https://github.com/5h4d0wn1k)
 - Portfolio: [swnk.in](https://www.swnk.in)
-- CuboidSoft: [cuboidsoft.in](https://www.cuboidsoft.in)
 - Social Impact: [social.swnk.in](https://social.swnk.in)
 - Email: [nikhilnagpure203@gmail.com](mailto:nikhilnagpure203@gmail.com)
 
