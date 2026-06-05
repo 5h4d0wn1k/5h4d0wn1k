@@ -8,7 +8,6 @@
   <a href="https://www.linkedin.com/in/nikhilnagpure24/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
   <a href="https://github.com/5h4d0wn1k"><img src="https://img.shields.io/badge/GitHub-111827?style=for-the-badge&logo=github&logoColor=white" /></a>
   <a href="https://www.swnk.in"><img src="https://img.shields.io/badge/Portfolio-0891b2?style=for-the-badge&logo=vercel&logoColor=white" /></a>
-  <a href="https://www.cuboidsoft.in"><img src="https://img.shields.io/badge/CuboidSoft-0f766e?style=for-the-badge&logo=serverless&logoColor=white" /></a>
   <a href="https://social.swnk.in"><img src="https://img.shields.io/badge/Social%20Impact-16a34a?style=for-the-badge&logo=leaflet&logoColor=white" /></a>
   <a href="mailto:nikhilnagpure203@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" /></a>
 </p>
@@ -27,7 +26,6 @@ location: Indore, Madhya Pradesh, India
 education: B.Tech CSE (Cybersecurity & Digital Forensics), VIT Bhopal (2021-2025), CGPA 8.33
 current_roles:
   - Founder & CEO @ Shadownik
-  - Co-Founder @ CuboidSoft
   - Founding SWE @ Pawan Technologies
 focus_areas:
   - Offensive Security
@@ -40,16 +38,6 @@ currently_building:
 ```
 
 ## Experience
-
-### Co-Founder - [CuboidSoft](https://www.cuboidsoft.in) (Jan 2025 - Present)
-*IT Software Company (Custom Engineering, Product Delivery, and Digital Transformation)*
-
-- Co-founded an IT software company delivering custom web platforms, business systems, and automation products for startups and SMEs.
-- Lead end-to-end product engineering from requirements, system design, and architecture to release and long-term maintenance.
-- Own full-stack delivery pipelines using Next.js, Node.js, TypeScript, and PostgreSQL with production-grade API design and secure auth.
-- Defined engineering standards for code reviews, branching strategy, CI/CD, environment promotion, monitoring, and incident response readiness.
-- Drive client-facing technical discovery, project scoping, sprint planning, and delivery governance to keep execution predictable and on-time.
-- Built reusable internal modules and deployment playbooks to reduce delivery time, improve quality consistency, and scale team output.
 
 ### Founder & CEO - [Shadownik](https://www.swnk.in) (Jun 2024 - Present)
 - Built and scaled a multi-service tech venture across cybersecurity, full-stack engineering, cloud deployment, and digital operations.
