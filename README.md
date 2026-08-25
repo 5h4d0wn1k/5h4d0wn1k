@@ -7,7 +7,7 @@
 <p>
   <a href="https://www.linkedin.com/in/nikhilnagpure24/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
   <a href="https://github.com/5h4d0wn1k"><img src="https://img.shields.io/badge/GitHub-111827?style=for-the-badge&logo=github&logoColor=white" /></a>
-  <a href="https://www.swnk.in"><img src="https://img.shields.io/badge/Portfolio-0891b2?style=for-the-badge&logo=vercel&logoColor=white" /></a>
+  <a href="https://cynik-operator.pages.dev"><img src="https://img.shields.io/badge/Portfolio-0891b2?style=for-the-badge&logo=vercel&logoColor=white" /></a>
   <a href="https://social.swnk.in"><img src="https://img.shields.io/badge/Social%20Impact-16a34a?style=for-the-badge&logo=leaflet&logoColor=white" /></a>
   <a href="mailto:nikhilnagpure203@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" /></a>
 </p>
@@ -41,7 +41,7 @@ currently_building:
 
 ## Experience
 
-### Founder & CEO - [Shadownik](https://www.swnk.in) (Jun 2024 - Present)
+### Founder & CEO - [Shadownik](https://cynik-operator.pages.dev) (Jun 2024 - Present)
 - Built and scaled a multi-service tech venture across cybersecurity, full-stack engineering, cloud deployment, and digital operations.
 - Delivered secure production systems and offensive security assessments for real-world clients.
 - Leading product development for ApiSecPlatform and multiple automation-focused services.
@@ -137,7 +137,7 @@ I've built **15+ open-source security tools** for authorized penetration testing
 
 - **LinkedIn**: [linkedin.com/in/nikhilnagpure24](https://www.linkedin.com/in/nikhilnagpure24)
 - **GitHub**: [github.com/5h4d0wn1k](https://github.com/5h4d0wn1k)
-- **Portfolio**: [swnk.in](https://www.swnk.in)
+- **Portfolio**: [swnk.in](https://cynik-operator.pages.dev)
 - **Social Impact**: [social.swnk.in](https://social.swnk.in)
 - **Email**: [nikhilnagpure203@gmail.com](mailto:nikhilnagpure203@gmail.com)
 
