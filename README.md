@@ -22,10 +22,10 @@
 
 ```yaml
 name: Nikhil Nagpure
-location: Indore, Madhya Pradesh, India
+location: India
 education: B.Tech CSE (Cybersecurity & Digital Forensics), VIT Bhopal (2021-2025), CGPA 8.33
 current_roles:
-  - Founder & CEO @ Shadownik
+  - Founder @ Shadownik
   - Founding SWE @ Pawan Technologies
 focus_areas:
   - Offensive Security & Penetration Testing
@@ -41,7 +41,7 @@ currently_building:
 
 ## Experience
 
-### Founder & CEO - [Shadownik](https://cynik-operator.pages.dev) (Jun 2024 - Present)
+### Founder - [Shadownik](https://cynik-operator.pages.dev) (Jun 2024 - Present)
 - Built and scaled a multi-service tech venture across cybersecurity, full-stack engineering, cloud deployment, and digital operations.
 - Delivered secure production systems and offensive security assessments for real-world clients.
 - Leading product development for ApiSecPlatform and multiple automation-focused services.
@@ -137,8 +137,7 @@ I've built **15+ open-source security tools** for authorized penetration testing
 
 - **LinkedIn**: [linkedin.com/in/nikhilnagpure24](https://www.linkedin.com/in/nikhilnagpure24)
 - **GitHub**: [github.com/5h4d0wn1k](https://github.com/5h4d0wn1k)
-- **Portfolio**: [swnk.in](https://cynik-operator.pages.dev)
-- **Social Impact**: [social.swnk.in](https://social.swnk.in)
+- **Portfolio**: [Cynik operator](https://cynik-operator.pages.dev)
 - **Email**: [nikhilnagpure203@gmail.com](mailto:nikhilnagpure203@gmail.com)
 
 ---
