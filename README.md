@@ -38,12 +38,12 @@ education:
   - B.Tech CSE (Cybersecurity & Digital Forensics), VIT Bhopal 2021-2025
   - CGPA 8.33/10
 current_roles:
-  - Co-Founder & Technical Lead @ CuboidSoft
+  - Technical Lead @ CuboidSoft
   - Founder @ Shadownik (freelance venture)
   - Founding SWE @ Pawan Technologies
 experience:
   - Shadownik          (Jun 2024 - present)  founder · full-stack · security consulting
-  - CuboidSoft         (Jan 2025 - present)  co-founder · technical lead · IT services
+  - CuboidSoft         (Jan 2025 - present)  technical lead · IT services
   - Pawan Technologies (Sep 2025 - present)  founding SWE
   - InLighnX Global    (Jun 2025 - present)  offensive security intern
   - Internship Studio  (Nov 2023 - Dec 2023) ethical hacking intern
@@ -128,8 +128,8 @@ The current effort — **autonomous offensive/defensive security tooling** for a
 
 ## 👨‍💻 Experience
 
-### Co-Founder & Technical Lead — [CuboidSoft](https://cuboidsoft.in) (Jan 2025 - Present)
-- Co-founded an IT software company delivering custom web applications, mobile apps, and digital solutions for SMEs and startups across multiple domains.
+### Technical Lead — [CuboidSoft](https://cuboidsoft.in) (Jan 2025 - Present)
+- Lead an IT software company delivering custom web applications, mobile apps, and digital solutions for SMEs and startups across multiple domains.
 - Lead full-stack architecture and development for client projects using Next.js, Node.js, PostgreSQL, and modern frontend frameworks to build secure, scalable applications.
 - Own development workflows end-to-end: Git version control, CI/CD pipelines, code reviews, and cloud/VPS deployment.
 - Ship on company strategy, branding, and go-to-market — service packaging, proposal writing, and technical client presentations.
