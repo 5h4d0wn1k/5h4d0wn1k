@@ -8,7 +8,6 @@
   <a href="https://www.linkedin.com/in/nikhilnagpure24/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
   <a href="https://github.com/5h4d0wn1k"><img src="https://img.shields.io/badge/GitHub-111827?style=for-the-badge&logo=github&logoColor=white" /></a>
   <a href="https://cynik-operator.pages.dev"><img src="https://img.shields.io/badge/Portfolio-0891b2?style=for-the-badge&logo=vercel&logoColor=white" /></a>
-  <a href="https://social.swnk.in"><img src="https://img.shields.io/badge/Social%20Impact-16a34a?style=for-the-badge&logo=leaflet&logoColor=white" /></a>
   <a href="mailto:nikhilnagpure203@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" /></a>
 </p>
 
@@ -25,7 +24,7 @@ name: Nikhil Nagpure
 location: India
 education: B.Tech CSE (Cybersecurity & Digital Forensics), VIT Bhopal (2021-2025), CGPA 8.33
 current_roles:
-  - Founder @ Shadownik
+  - Founder @ Shadownik (freelance venture)
   - Founding SWE @ Pawan Technologies
 focus_areas:
   - Offensive Security & Penetration Testing
@@ -41,8 +40,8 @@ currently_building:
 
 ## Experience
 
-### Founder - [Shadownik](https://cynik-operator.pages.dev) (Jun 2024 - Present)
-- Built and scaled a multi-service tech venture across cybersecurity, full-stack engineering, cloud deployment, and digital operations.
+### Founder - [Shadownik](https://cynik-operator.pages.dev) · Freelance Venture (Jun 2024 - Present)
+- Built and scaled a multi-service freelance venture across cybersecurity, full-stack engineering, cloud deployment, and digital operations.
 - Delivered secure production systems and offensive security assessments for real-world clients.
 - Leading product development for ApiSecPlatform and multiple automation-focused services.
 
@@ -52,9 +51,6 @@ currently_building:
 
 ### Cybersecurity Intern - InLighntech Global Pvt. Ltd. (Jun 2025 - Present)
 - Performing vulnerability analysis, threat modeling, and practical blue-team/offensive workflows under mentor guidance.
-
-### Founder - [Shadownik Social Services](https://social.swnk.in) (Jul 2025 - Present)
-- Building a technology-powered social impact platform for outreach, volunteer coordination, and community support.
 
 ---
 
@@ -114,9 +110,6 @@ Active contributor to major upstream projects — including [pandas](https://git
 - **CEH** (EC-Council)
 - **CNSP** (The SecOps Group)
 - **Practical Ethical Hacking** (TCM Security)
-- **Top 12%** on TryHackMe
-- **Top 600** on BugBase
-- **Ranked 36th** in CyVIT CTF (VIT Bhopal)
 - **Patent filed**: *A Self-Cleaning Glasses Case System* (Application No: 202421032123)
 
 ---
