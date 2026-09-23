@@ -12,6 +12,12 @@
 <a href="https://github.com/5h4d0wn1k"><img src="https://img.shields.io/github/followers/5h4d0wn1k?style=for-the-badge&label=Followers&color=22d3ee" /></a>
 &nbsp;&nbsp;
 <a href="https://github.com/5h4d0wn1k?tab=repositories"><img src="https://img.shields.io/badge/Repositories-243-0f172a?style=for-the-badge" /></a>
+&nbsp;&nbsp;
+<a href="https://github.com/5h4d0wn1k/5h4d0wn1k/issues"><img src="https://img.shields.io/github/issues/5h4d0wn1k/5h4d0wn1k?style=for-the-badge&label=Issues&color=22d3ee" /></a>
+&nbsp;&nbsp;
+<a href="https://github.com/5h4d0wn1k/5h4d0wn1k/pulls"><img src="https://img.shields.io/github/issues-pr/5h4d0wn1k/5h4d0wn1k?style=for-the-badge&label=PRs&color=22d3ee" /></a>
+&nbsp;&nbsp;
+<img src="https://img.shields.io/github/license/5h4d0wn1k/5h4d0wn1k?style=for-the-badge&label=License&color=22d3ee" />
 
 <br/>
 
