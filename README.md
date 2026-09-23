@@ -32,23 +32,44 @@
 ```yaml
 name: Nikhil Nagpure
 handle: 5h4d0wn1k
-location: India
-education: B.Tech CSE (Cybersecurity & Digital Forensics), VIT Bhopal (2021-2025), CGPA 8.33
+location: Indore / Balaghat, India
+_status: open to global relocation
+education:
+  - B.Tech CSE (Cybersecurity & Digital Forensics), VIT Bhopal 2021-2025
+  - CGPA 8.33/10
 current_roles:
+  - Co-Founder & Technical Lead @ CuboidSoft
   - Founder @ Shadownik (freelance venture)
   - Founding SWE @ Pawan Technologies
+experience:
+  - Shadownik          (Jun 2024 - present)  founder · full-stack · security consulting
+  - CuboidSoft         (Jan 2025 - present)  co-founder · technical lead · IT services
+  - Pawan Technologies (Sep 2025 - present)  founding SWE
+  - InLighnX Global    (Jun 2025 - present)  offensive security intern
+  - Internship Studio  (Nov 2023 - Dec 2023) ethical hacking intern
 focus_areas:
-  - Offensive Security & Penetration Testing
+  - Offensive Security & Red Teaming
   - API Security Engineering
-  - Secure Full-Stack Development
-  - Hardware + Wireless Pentesting
   - AI / LLM Security
-  - Open Source Security Tools
+  - Hardware + Wireless Pentesting
+  - Secure Full-Stack Development
 currently_building:
   - ApiSecPlatform - Enterprise API Security Testing
   - Portable Wireless Pentesting Toolkit - ESP32-based
   - 243 repos / 200 security tools / counting...
+languages: Python · TypeScript · C/C++ · Solidity · Rust · Dart · SQL · Java
+certifications: CEH · CNSP · PEH (TCM) · IELTS 7.5 (C1)
+communities: DEFCON Franklin · Cyber Expert @ Ministry of Home Affairs (India)
 ```
+
+<p align="center">
+  <img src="https://img.shields.io/badge/offensive_security-red?style=flat-square" />
+  <img src="https://img.shields.io/badge/red_team-darkred?style=flat-square" />
+  <img src="https://img.shields.io/badge/api_security-cyan?style=flat-square" />
+  <img src="https://img.shields.io/badge/llm_security-purple?style=flat-square" />
+  <img src="https://img.shields.io/badge/wireless_hardware-teal?style=flat-square" />
+  <img src="https://img.shields.io/badge/fullstack-yellow?style=flat-square" />
+</p>
 
 ## 🧰 Tech Stack
 
@@ -107,6 +128,12 @@ The current effort — **autonomous offensive/defensive security tooling** for a
 
 ## 👨‍💻 Experience
 
+### Co-Founder & Technical Lead — [CuboidSoft](https://cuboidsoft.in) (Jan 2025 - Present)
+- Co-founded an IT software company delivering custom web applications, mobile apps, and digital solutions for SMEs and startups across multiple domains.
+- Lead full-stack architecture and development for client projects using Next.js, Node.js, PostgreSQL, and modern frontend frameworks to build secure, scalable applications.
+- Own development workflows end-to-end: Git version control, CI/CD pipelines, code reviews, and cloud/VPS deployment.
+- Ship on company strategy, branding, and go-to-market — service packaging, proposal writing, and technical client presentations.
+
 ### Founder — [Shadownik](https://cynik-operator.pages.dev) · Freelance Venture (Jun 2024 - Present)
 - Built and scaled a multi-service freelance venture across cybersecurity, full-stack engineering, cloud deployment, and digital operations.
 - Delivered secure production systems and offensive security assessments for real-world clients.
@@ -116,8 +143,13 @@ The current effort — **autonomous offensive/defensive security tooling** for a
 - Developing responsive production web apps and scalable backend APIs.
 - Building integrations, database workflows, and cloud-ready deployment pipelines.
 
-### Cybersecurity Intern — InLighntech Global Pvt. Ltd. (Jun 2025 - Present)
-- Performing vulnerability analysis, threat modeling, and practical blue-team/offensive workflows under mentor guidance.
+### Offensive Cybersecurity Intern — InLighnX Global Pvt. Ltd. (Jun 2025 - Present)
+- Performing web application security assessments (OWASP Top 10, Burp Suite, Metasploit), threat modeling, and red-team simulations.
+- Contributing to large-scale IT infrastructure defense: intrusion detection monitoring, vulnerability triage, and security reporting.
+
+### Ethical Hacking Intern — Internship Studio (Nov 2023 - Dec 2023)
+- Identified and mitigated XSS vulnerabilities in production web applications; authored remediation reports.
+- Designed practical security lab environments simulating real-world attack scenarios.
 
 ---
 
