@@ -29,46 +29,85 @@
 
 ## 🛡️ About Me
 
-```yaml
-name: Nikhil Nagpure
-handle: 5h4d0wn1k
-location: Indore / Balaghat, India
-_status: open to global relocation
-education:
-  - B.Tech CSE (Cybersecurity & Digital Forensics), VIT Bhopal 2021-2025
-  - CGPA 8.33/10
-current_roles:
-  - Technical Lead @ CuboidSoft
-  - Founder @ Shadownik (freelance venture)
-  - Founding SWE @ Pawan Technologies
-experience:
-  - Shadownik          (Jun 2024 - present)  founder · full-stack · security consulting
-  - CuboidSoft         (Jan 2025 - present)  technical lead · IT services
-  - Pawan Technologies (Sep 2025 - present)  founding SWE
-  - InLighnX Global    (Jun 2025 - present)  offensive security intern
-  - Internship Studio  (Nov 2023 - Dec 2023) ethical hacking intern
-focus_areas:
-  - Offensive Security & Red Teaming
-  - API Security Engineering
-  - AI / LLM Security
-  - Hardware + Wireless Pentesting
-  - Secure Full-Stack Development
-currently_building:
-  - ApiSecPlatform - Enterprise API Security Testing
-  - Portable Wireless Pentesting Toolkit - ESP32-based
-  - 243 repos / 200 security tools / counting...
-languages: Python · TypeScript · C/C++ · Solidity · Rust · Dart · SQL · Java
-certifications: CEH · CNSP · PEH (TCM) · IELTS 7.5 (C1)
-communities: DEFCON Franklin · Cyber Expert @ Ministry of Home Affairs (India)
-```
+Security engineer and founder building offensive/defensive tooling, secure
+full-stack products, and hardware wireless kits — with ~200 open-source security
+tools shipped and a focus on systems that stay maintainable as they grow.
+
+<table>
+  <tr>
+    <td width="110" align="center"><b>Identity</b></td>
+    <td>
+      <b>Nikhil Nagpure</b> · <code>5h4d0wn1k</code><br/>
+      <sub>📍 Indore / Balaghat, India · 🛰️ open to relocation</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center"><b>Education</b></td>
+    <td>B.Tech CSE — Cybersecurity & Digital Forensics, VIT Bhopal (2021–2025) · <b>CGPA 8.33/10</b></td>
+  </tr>
+  <tr>
+    <td align="center"><b>Now</b></td>
+    <td>
+      Technical Lead @ <b>CuboidSoft</b> ·
+      Founder @ <b>Shadownik</b> ·
+      Founding SWE @ <b>Pawan Technologies</b><br/>
+      <sub>Previously: Offensive Security Intern @ InLighnX · Ethical Hacking Intern @ Internship Studio</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center"><b>Focus</b></td>
+    <td>
+      Offensive Security · Red Teaming · API Security · AI/LLM Security · Hardware-Wireless Pentesting · Secure Full-Stack
+    </td>
+  </tr>
+  <tr>
+    <td align="center"><b>Building</b></td>
+    <td>
+      <b>ApiSecPlatform</b> (enterprise API security testing) ·
+      <b>Portable Wireless Pentest Toolkit</b> (ESP32-based) ·
+      <b>SentinelWall</b> AI threat detection
+    </td>
+  </tr>
+</table>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/offensive_security-red?style=flat-square" />
-  <img src="https://img.shields.io/badge/red_team-darkred?style=flat-square" />
-  <img src="https://img.shields.io/badge/api_security-cyan?style=flat-square" />
-  <img src="https://img.shields.io/badge/llm_security-purple?style=flat-square" />
-  <img src="https://img.shields.io/badge/wireless_hardware-teal?style=flat-square" />
-  <img src="https://img.shields.io/badge/fullstack-yellow?style=flat-square" />
+  <b>Focus areas</b>
+  <br/>
+  <img src="https://img.shields.io/badge/Offensive%20Security-red?style=flat-square" />
+  <img src="https://img.shields.io/badge/Red%20Teaming-darkred?style=flat-square" />
+  <img src="https://img.shields.io/badge/API%20Security-22d3ee?style=flat-square" />
+  <img src="https://img.shields.io/badge/LLM%20Security-a21caf?style=flat-square" />
+  <img src="https://img.shields.io/badge/Hardware%20%26%20Wireless-14b8a6?style=flat-square" />
+  <img src="https://img.shields.io/badge/Secure%20Full--Stack-eab308?style=flat-square" />
+</p>
+
+<p align="center">
+  <b>Core stack</b>
+  <br/>
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" />
+  <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=flat-square&logo=c%2B%2B&logoColor=white" />
+  <img src="https://img.shields.io/badge/Solidity-363636?style=flat-square&logo=solidity&logoColor=white" />
+  <img src="https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white" />
+  <img src="https://img.shields.io/badge/Dart-0175C2?style=flat-square&logo=dart&logoColor=white" />
+  <img src="https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=mysql&logoColor=white" />
+  <img src="https://img.shields.io/badge/Java-E34F26?style=flat-square&logo=java&logoColor=white" />
+</p>
+
+<p align="center">
+  <b>Certifications</b>
+  <br/>
+  <img src="https://img.shields.io/badge/CEH-e63946?style=flat-square" />
+  <img src="https://img.shields.io/badge/CNSP-457b9d?style=flat-square" />
+  <img src="https://img.shields.io/badge/PEH%20(TCM)-6d6875?style=flat-square" />
+  <img src="https://img.shields.io/badge/IELTS%207.5%20(C1)-2a9d8f?style=flat-square" />
+</p>
+
+<p align="center">
+  <b>Communities</b>
+  <br/>
+  <img src="https://img.shields.io/badge/DEFCON%20Franklin%20Security-black?style=flat-square" />
+  <img src="https://img.shields.io/badge/Cyber%20Expert%20-%20Ministry%20of%20Home%20Affairs%20(India)-1f5c8b?style=flat-square" />
 </p>
 
 ## 🧰 Tech Stack
