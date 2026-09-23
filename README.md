@@ -44,7 +44,7 @@ tools shipped and a focus on systems that stay maintainable as they grow.
     <td width="110" align="center"><b>Identity</b></td>
     <td>
       <b>Nikhil Nagpure</b> · <code>5h4d0wn1k</code><br/>
-      <sub>📍 Indore / Balaghat, India · 🛰️ open to relocation</sub>
+      <sub>🌍 Open to relocation & frequent travel · always exploring somewhere new</sub>
     </td>
   </tr>
   <tr>
