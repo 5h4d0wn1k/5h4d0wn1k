@@ -70,36 +70,38 @@ authored to a repository I don't own.
 ### 📊 Every number, in full
 
 - **17 upstream PRs** across **14 external repositories**
-  &nbsp;·&nbsp; **5 merged** &nbsp;— SymPy 1 · TheAlgorithms/Python 2 · freeCodeCamp 1 · free-programming-books 1
-  &nbsp;·&nbsp; **4 under review** &nbsp;— SciPy 1 · SciPy/XSF 1 · pandas 1 · Google OR-Tools 1
+  &nbsp;·&nbsp; **6 merged** &nbsp;— SymPy 1 · TheAlgorithms/Python 2 · freeCodeCamp 1 · free-programming-books 1 · green-mart 1
+  &nbsp;·&nbsp; **5 open** &nbsp;— SciPy 1 · SciPy/XSF 1 · pandas 1 · Google OR-Tools 1 · opencode 1
   &nbsp;·&nbsp; **6 closed without merge** &nbsp;— networkx 2 · github/docs 1 · Hydra 1 · kiro-gateway 1 · pandas 1 (a duplicate, see below)
-  &nbsp;·&nbsp; **2 deliberately not counted as fixes** &nbsp;— green-mart 1 · opencode 1
-- **`5 + 4 + 6 + 2 = 17`** &nbsp;— every upstream PR I have ever opened is itemised on this page
+- **`6 + 5 + 6 = 17`** &nbsp;— every upstream PR I have ever opened is itemised on this page
 - **`17 PRs = 16 distinct fixes = 14 repositories`** &nbsp;— pandas#69428 and #69429 are the same change on the same branch, so one fix was opened twice
 
-> **All pull requests (mostly my own repositories): 201 authored · 150 merged.**
-> 144 of those 150 merges are into repos I own, so the *upstream* merge count is 6 —
-> the 201/150 figures are a lifetime count across everything and are not upstream numbers.
-> 5 of those 6 external merges are itemised below; the 6th is a template-file add, deliberately not counted as a debugging fix.
+> **All pull requests (mostly my own repositories): 203 authored · 152 merged.**
+> 146 of those 152 merges are into a repo I own or an org I belong to, so the
+> *upstream* merge count is 6. The 203/152 pair is a lifetime count across everything
+> and is not an upstream number. Enumerated from the GitHub API on 2026-09-26; the
+> other 37 own-repository PRs are still open and 3 were closed without merging.
 
-### ✅ Merged upstream — 5
+### ✅ Merged upstream — 6
 
-*Repos: SymPy 1 + TheAlgorithms/Python 2 + freeCodeCamp 1 + free-programming-books 1 = 5*
+*Repos: SymPy 1 + TheAlgorithms/Python 2 + freeCodeCamp 1 + free-programming-books 1 + green-mart 1 = 6*
 
 - **SymPy** &nbsp;·&nbsp; [#30567](https://github.com/sympy/sympy/pull/30567) — `solve()` returned points outside the domain of a denominator — e.g. roots at `x = 0` for `x/log(x)`
 - **TheAlgorithms/Python** &nbsp;·&nbsp; [#15402](https://github.com/TheAlgorithms/Python/pull/15402) — `reversort` was hardcoded to a fixed int width; made generic over any comparable
 - **TheAlgorithms/Python** &nbsp;·&nbsp; [#15405](https://github.com/TheAlgorithms/Python/pull/15405) — Odd-even transposition sort was hardcoded the same way
 - **freeCodeCamp** &nbsp;·&nbsp; [#70289](https://github.com/freeCodeCamp/freeCodeCamp/pull/70289) — A truthy/falsy lesson taught the rule using an example that contradicted it
 - **free-programming-books** &nbsp;·&nbsp; [#13472](https://github.com/EbookFoundation/free-programming-books/pull/13472) — Brazilian course links returned 404; repaired from the Wayback Machine
+- **green-mart** &nbsp;·&nbsp; [#1](https://github.com/Deb07-Ops/green-mart/pull/1) — an auto-generated `SECURITY.md` template add, **not a debugging fix**; it is counted under merged because that is its state, and is excluded from the five fixes above it
 
-### 🔄 Under review — 4
+### 🔄 Open — 5
 
-*Repos: SciPy 1 + SciPy/XSF 1 + pandas 1 + Google OR-Tools 1 = 4*
+*Repos: SciPy 1 + SciPy/XSF 1 + pandas 1 + Google OR-Tools 1 + opencode 1 = 5*
 
 - **SciPy** &nbsp;·&nbsp; [#26242](https://github.com/scipy/scipy/pull/26242) — Duplicate entries in a CSR matrix silently corrupted `sparse.csgraph` bipartite matching
 - **SciPy/XSF** &nbsp;·&nbsp; [#284](https://github.com/scipy/xsf/pull/284) — Second derivative of `assoc_legendre_p` had the wrong sign at `z == -1`
 - **pandas** &nbsp;·&nbsp; [#69429](https://github.com/pandas-dev/pandas/pull/69429) — `GroupBy.agg(as_index=False)` raised `ValueError` when grouping by a MultiIndex column key
 - **Google OR-Tools** &nbsp;·&nbsp; [#5426](https://github.com/google/or-tools/pull/5426) — Routing rejected dropped/unassigned nodes when a vehicle dimension used transit drops
+- **opencode** &nbsp;·&nbsp; [#51514](https://github.com/anomalyco/opencode/pull/51514) — **held back on my side**, not awaiting a reviewer: the underlying bug looks already fixed on `dev`, so this may be a duplicate and I would rather not spend a maintainer's time on it
 
 ### ❌ Closed without merge — 6
 
@@ -114,15 +116,6 @@ narrative to claim for any of them.
 - **Hydra** &nbsp;·&nbsp; [#3465](https://github.com/hydra-ecosystem/hydra/pull/3465) — closed upstream without merge
 - **kiro-gateway** &nbsp;·&nbsp; [#240](https://github.com/jwadow/kiro-gateway/pull/240) — closed upstream without merge
 - **pandas** &nbsp;·&nbsp; [#69428](https://github.com/pandas-dev/pandas/pull/69428) — not a separate bug: the same branch and the same change as the live #69429 listed above, closed in its favour
-
-### 🙈 Not counted as fixes — 2
-
-*Repos: green-mart 1 + opencode 1 = 2*
-
-Listed so the arithmetic closes, deliberately excluded from the fix counts.
-
-- **green-mart** &nbsp;·&nbsp; [#1](https://github.com/Deb07-Ops/green-mart/pull/1) — an auto-generated `SECURITY.md` template add, not a debugging fix
-- **opencode** &nbsp;·&nbsp; [#51514](https://github.com/anomalyco/opencode/pull/51514) — held back on my side: it may duplicate a fix already on `dev`
 
 ---
 
