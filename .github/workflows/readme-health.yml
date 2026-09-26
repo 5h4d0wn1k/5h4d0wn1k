@@ -2,12 +2,21 @@ name: README Health Check
 
 on:
   pull_request:
-    paths: ["README.md", ".github/**"]
+    paths: ["README.md", "scripts/**", ".github/**"]
   push:
     branches: [main]
-    paths: ["README.md", ".github/**"]
+    paths: ["README.md", "scripts/**", ".github/**"]
   schedule:
+    # Weekly. The README is mostly live badges, so it rots between pull requests:
+    # a service can be retired, an endpoint removed, or a repository renamed with
+    # nothing in the repository changing at all. This is the run that catches it.
     - cron: "0 0 * * 1"
+  workflow_dispatch:
+    inputs:
+      strict:
+        description: "Treat warnings as failures (bot-blocked hosts included)"
+        type: boolean
+        default: false
 
 permissions:
   contents: read
@@ -16,6 +25,7 @@ jobs:
   validate-readme:
     name: Validate README links and badges
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v7
 
@@ -24,42 +34,20 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Extract image URLs from README
-        id: urls
-        run: |
-          python - <<'EOF'
-          import re
-          from pathlib import Path
-          text = Path("README.md").read_text()
-          urls = sorted(set(
-              u for u in re.findall(r'https://[^\s)"\']+', text)
-              if any(ext in u for ext in (".svg", ".png", ".jpg", ".jpeg", ".webp"))
-              or any(d in u for d in ("vercel.app", "rshah.org", "demolab.com", "img.shields.io", "repo-widget", "github-profile-summary"))
-          ))
-          Path(".urls.txt").write_text("\n".join(urls) + ("\n" if urls else ""))
-          print(f"Found {len(urls)} image URLs to check")
-          EOF
+      # Replaces a status-code-only sweep over image URLs, which passed a badge
+      # that had been rendering "404: badge not found" behind an HTTP 200.
+      # The validator checks every URL on the page, reads badge bodies, and
+      # reconciles the contribution ledger against a dated ground-truth snapshot.
+      - name: Validate README
+        run: python scripts/validate_readme.py README.md ${{ inputs.strict && '--strict' || '' }}
 
-      - name: Check all image URLs return 200
+      - name: Summarise
+        if: always()
         run: |
-          if [ ! -s .urls.txt ]; then
-            echo "No image URLs found to validate." && exit 0
-          fi
-          failures=0
-          while read -r url; do
-            code=$(curl -sL -o /dev/null -w "%{http_code}" --max-time 20 "$url")
-            [ "$code" = "200" ] || { echo "DEAD ($code): $url"; failures=$((failures+1)); }
-          done < .urls.txt
-          if [ "$failures" -gt 0 ]; then
-            echo "::error::$failures image URL(s) returned a non-200 status."
-            exit 1
-          fi
-          echo "All image URLs returned HTTP 200."
-
-      - name: Check for known-dead services
-        run: |
-          if grep -Eq "github-readme-stats\.vercel\.app|github-readme-activity-graph" README.md; then
-            echo "::error::README uses a known-dead badge service (github-readme-stats / activity-graph). Remove it."
-            exit 1
-          fi
-          echo "No known-dead services detected."
+          {
+            echo "### README validation"
+            echo
+            echo '```'
+            python scripts/validate_readme.py README.md --offline || true
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"

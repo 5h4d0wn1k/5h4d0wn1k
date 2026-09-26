@@ -1,0 +1,7 @@
+# Local build tooling for the README. build_readme.py reassembles README.md from
+# .scratch/ and asserts every patch it applies; without those inputs it aborts,
+# so committing it would ship a script that cannot run. The README itself is
+# edited directly - this is scaffolding, not part of the repository.
+/build_readme.py
+.scratch/
+/validate_readme.py
