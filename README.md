@@ -65,33 +65,35 @@
 ## 🌍 Open Source Contributions
 
 I report and fix bugs in projects I depend on. Every link below is a pull request I
-authored to a repository I don't own.
+authored to a repository I don't own and have no write access to.
 
 ### 📊 Every number, in full
 
-- **17 upstream PRs** across **14 external repositories**
-  &nbsp;·&nbsp; **6 merged** &nbsp;— SymPy 1 · TheAlgorithms/Python 2 · freeCodeCamp 1 · free-programming-books 1 · green-mart 1
+- **16 upstream PRs** across **13 external repositories**
+  &nbsp;·&nbsp; **5 merged** &nbsp;— SymPy 1 · TheAlgorithms/Python 2 · freeCodeCamp 1 · free-programming-books 1
   &nbsp;·&nbsp; **5 open** &nbsp;— SciPy 1 · SciPy/XSF 1 · pandas 1 · Google OR-Tools 1 · opencode 1
   &nbsp;·&nbsp; **6 closed without merge** &nbsp;— networkx 2 · github/docs 1 · Hydra 1 · kiro-gateway 1 · pandas 1 (a duplicate, see below)
-- **`6 + 5 + 6 = 17`** &nbsp;— every upstream PR I have ever opened is itemised on this page
-- **`17 PRs = 16 distinct fixes = 14 repositories`** &nbsp;— pandas#69428 and #69429 are the same change on the same branch, so one fix was opened twice
+- **`5 + 5 + 6 = 16`** &nbsp;— every upstream PR I have ever opened is itemised on this page
+- **`16 PRs = 15 distinct fixes = 13 repositories`** &nbsp;— pandas#69428 and #69429 are the same fix re-opened from a branch of the same name; #69428 was closed in favour of #69429
 
-> **All pull requests (mostly my own repositories): 203 authored · 152 merged.**
-> 146 of those 152 merges are into a repo I own or an org I belong to, so the
-> *upstream* merge count is 6. The 203/152 pair is a lifetime count across everything
-> and is not an upstream number. Enumerated from the GitHub API on 2026-09-26; the
-> other 37 own-repository PRs are still open and 3 were closed without merging.
+> **All pull requests, mine and upstream alike: 200+ authored · 150+ merged.**
+> Rounded on purpose. Measured from the GitHub API on 2026-09-26 it was 206 authored
+> and 152 merged — and it moved by three pull requests during a single review pass,
+> so an exact total here would be wrong within days. 147 of the 152 merges are into a
+> repo I own or an org I belong to, which leaves **5** as the upstream merge count.
+> Of the 190 own-repository pull requests, 40 are still open and 3 were closed
+> without merging. The upstream ledger above is itemised one PR at a time, because
+> that part does not drift.
 
-### ✅ Merged upstream — 6
+### ✅ Merged upstream — 5
 
-*Repos: SymPy 1 + TheAlgorithms/Python 2 + freeCodeCamp 1 + free-programming-books 1 + green-mart 1 = 6*
+*Repos: SymPy 1 + TheAlgorithms/Python 2 + freeCodeCamp 1 + free-programming-books 1 = 5*
 
 - **SymPy** &nbsp;·&nbsp; [#30567](https://github.com/sympy/sympy/pull/30567) — `solve()` returned points outside the domain of a denominator — e.g. roots at `x = 0` for `x/log(x)`
 - **TheAlgorithms/Python** &nbsp;·&nbsp; [#15402](https://github.com/TheAlgorithms/Python/pull/15402) — `reversort` was hardcoded to a fixed int width; made generic over any comparable
 - **TheAlgorithms/Python** &nbsp;·&nbsp; [#15405](https://github.com/TheAlgorithms/Python/pull/15405) — Odd-even transposition sort was hardcoded the same way
 - **freeCodeCamp** &nbsp;·&nbsp; [#70289](https://github.com/freeCodeCamp/freeCodeCamp/pull/70289) — A truthy/falsy lesson taught the rule using an example that contradicted it
 - **free-programming-books** &nbsp;·&nbsp; [#13472](https://github.com/EbookFoundation/free-programming-books/pull/13472) — Brazilian course links returned 404; repaired from the Wayback Machine
-- **green-mart** &nbsp;·&nbsp; [#1](https://github.com/Deb07-Ops/green-mart/pull/1) — an auto-generated `SECURITY.md` template add, **not a debugging fix**; it is counted under merged because that is its state, and is excluded from the five fixes above it
 
 ### 🔄 Open — 5
 
@@ -115,7 +117,7 @@ narrative to claim for any of them.
 - **github/docs** &nbsp;·&nbsp; [#46017](https://github.com/github/docs/pull/46017) — closed upstream without merge
 - **Hydra** &nbsp;·&nbsp; [#3465](https://github.com/hydra-ecosystem/hydra/pull/3465) — closed upstream without merge
 - **kiro-gateway** &nbsp;·&nbsp; [#240](https://github.com/jwadow/kiro-gateway/pull/240) — closed upstream without merge
-- **pandas** &nbsp;·&nbsp; [#69428](https://github.com/pandas-dev/pandas/pull/69428) — not a separate bug: the same branch and the same change as the live #69429 listed above, closed in its favour
+- **pandas** &nbsp;·&nbsp; [#69428](https://github.com/pandas-dev/pandas/pull/69428) — not a separate bug: the same fix as the live #69429 above, re-opened from a branch of the same name with a later commit, and closed in its favour
 
 ---
 
