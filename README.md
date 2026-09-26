@@ -2,8 +2,6 @@
 
 # Nikhil Nagpure
 
-
-
 <!-- ── Header wave ─────────────────────────────────────────── -->
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f172a,50:020617,100:0f172a&height=230&section=header&text=Nikhil%20Nagpure&fontSize=48&fontColor=22d3ee&animation=fadeIn&desc=5h4d0wn1k%20%7C%20Security%20Engineer%20%7C%20Systems%20Builder&descSize=20&descAlignY=62" alt="Header banner: Nikhil Nagpure (5h4d0wn1k) — Security Engineer, Systems Builder" width="100%" />
 
@@ -82,8 +80,8 @@ because I do have write access there.
 > and 152 merged — and it moved by three pull requests during a single review pass,
 > so an exact total here would be wrong within days. 147 of the 152 merges went to a
 > repository I could already push to, which leaves **5** as the merge count for
-> repositories I have no write access to. Of the 189 pull requests to my own
-> repositories, 40 are still open and 3 were closed without merging. The ledger above
+> repositories I have no write access to. Of the 189 pull requests to my own repositories and the orgs
+> I belong to, 40 are still open and 3 were closed without merging. The ledger above
 > is itemised one PR at a time, because that part does not drift.
 
 ### ✅ Merged upstream — 5
@@ -118,11 +116,11 @@ narrative to claim for any of them.
 - **github/docs** &nbsp;·&nbsp; [#46017](https://github.com/github/docs/pull/46017) — closed upstream without merge
 - **Hydra** &nbsp;·&nbsp; [#3465](https://github.com/hydra-ecosystem/hydra/pull/3465) — closed upstream without merge
 - **kiro-gateway** &nbsp;·&nbsp; [#240](https://github.com/jwadow/kiro-gateway/pull/240) — closed upstream without merge
-- **pandas** &nbsp;·&nbsp; [#69428](https://github.com/pandas-dev/pandas/pull/69428) — not a separate bug: the same fix as the live #69429 above. a GitHub Actions workflow in the pandas repo (`github-actions[bot]`) auto-closed this one 14 seconds after it opened, because GH-39103 was not yet claimed; I ran `/take` and reopened it fresh as #69429 five minutes later, after a rebase onto the moved `main`
+- **pandas** &nbsp;·&nbsp; [#69428](https://github.com/pandas-dev/pandas/pull/69428) — not a separate bug: the same fix as the live #69429 above. A GitHub Actions workflow in the pandas repo (`github-actions[bot]`) auto-closed this one 14 seconds after it opened, because GH-39103 was not yet claimed; I ran `/take` and reopened it fresh as #69429 five minutes later, after a rebase onto the moved `main`
 
 ### Excluded from the upstream count — 1
 
-*Repos: green-mart 1 = 1*
+*1 repository · 1 pull request*
 
 Listed for completeness, because it is a pull request I opened to a repository I
 don't own and excluding it silently would make "17" wrong.
@@ -259,7 +257,6 @@ The current effort — **autonomous offensive/defensive security tooling** for a
 
 <p>
   <a href="https://github.com/5h4d0wn1k"><img src="https://img.shields.io/github/followers/5h4d0wn1k?style=for-the-badge&label=Followers&color=22d3ee" alt="Follower count" /></a>
-  <a href="https://github.com/5h4d0wn1k?tab=repositories"><img src="https://img.shields.io/github/repos/5h4d0wn1k?label=Repositories&color=22d3ee&style=for-the-badge" alt="Repository count" /></a>
   <a href="https://github.com/5h4d0wn1k/5h4d0wn1k/issues"><img src="https://img.shields.io/github/issues/5h4d0wn1k/5h4d0wn1k?style=for-the-badge&label=Issues&color=22d3ee" alt="Open issue count" /></a>
   <a href="https://github.com/5h4d0wn1k/5h4d0wn1k/pulls"><img src="https://img.shields.io/github/issues-pr/5h4d0wn1k/5h4d0wn1k?style=for-the-badge&label=PRs&color=22d3ee" alt="Pull request count" /></a>
   <a href="https://github.com/5h4d0wn1k/5h4d0wn1k/commits/main"><img src="https://img.shields.io/github/last-commit/5h4d0wn1k/5h4d0wn1k?style=for-the-badge&label=Last%20commit&color=22d3ee" alt="Last commit to the profile repository" /></a>
