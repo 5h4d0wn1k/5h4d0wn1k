@@ -118,7 +118,7 @@ narrative to claim for any of them.
 - **github/docs** &nbsp;·&nbsp; [#46017](https://github.com/github/docs/pull/46017) — closed upstream without merge
 - **Hydra** &nbsp;·&nbsp; [#3465](https://github.com/hydra-ecosystem/hydra/pull/3465) — closed upstream without merge
 - **kiro-gateway** &nbsp;·&nbsp; [#240](https://github.com/jwadow/kiro-gateway/pull/240) — closed upstream without merge
-- **pandas** &nbsp;·&nbsp; [#69428](https://github.com/pandas-dev/pandas/pull/69428) — not a separate bug: the same fix as the live #69429 above. pandas' issue-assignment bot auto-closed this one 14 seconds after it opened, because GH-39103 was not yet claimed; I ran `/take` and reopened it fresh as #69429 five minutes later, after a rebase onto the moved `main`
+- **pandas** &nbsp;·&nbsp; [#69428](https://github.com/pandas-dev/pandas/pull/69428) — not a separate bug: the same fix as the live #69429 above. a GitHub Actions workflow in the pandas repo (`github-actions[bot]`) auto-closed this one 14 seconds after it opened, because GH-39103 was not yet claimed; I ran `/take` and reopened it fresh as #69429 five minutes later, after a rebase onto the moved `main`
 
 ### Excluded from the upstream count — 1
 
@@ -262,7 +262,7 @@ The current effort — **autonomous offensive/defensive security tooling** for a
   <a href="https://github.com/5h4d0wn1k?tab=repositories"><img src="https://img.shields.io/github/repos/5h4d0wn1k?label=Repositories&color=22d3ee&style=for-the-badge" alt="Repository count" /></a>
   <a href="https://github.com/5h4d0wn1k/5h4d0wn1k/issues"><img src="https://img.shields.io/github/issues/5h4d0wn1k/5h4d0wn1k?style=for-the-badge&label=Issues&color=22d3ee" alt="Open issue count" /></a>
   <a href="https://github.com/5h4d0wn1k/5h4d0wn1k/pulls"><img src="https://img.shields.io/github/issues-pr/5h4d0wn1k/5h4d0wn1k?style=for-the-badge&label=PRs&color=22d3ee" alt="Pull request count" /></a>
-  <a href="https://streak-stats.demolab.com?user=5h4d0wn1k"><img src="https://img.shields.io/github/last-commit/5h4d0wn1k/5h4d0wn1k?style=for-the-badge&label=Streak&color=22d3ee" alt="Streak" /></a>
+  <a href="https://github.com/5h4d0wn1k/5h4d0wn1k/commits/main"><img src="https://img.shields.io/github/last-commit/5h4d0wn1k/5h4d0wn1k?style=for-the-badge&label=Last%20commit&color=22d3ee" alt="Last commit to the profile repository" /></a>
   <img src="https://img.shields.io/github/license/5h4d0wn1k/5h4d0wn1k?style=for-the-badge&label=License&color=22d3ee" alt="Repository license" />
 </p>
 
