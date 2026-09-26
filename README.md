@@ -65,25 +65,26 @@
 ## 🌍 Open Source Contributions
 
 I report and fix bugs in projects I depend on. Every link below is a pull request I
-authored to a repository I don't own and have no write access to.
+authored to a repository I don't own. Sixteen of them are to repositories where I
+have no write access at all; the seventeenth is disclosed separately at the end,
+because I do have write access there.
 
 ### 📊 Every number, in full
 
-- **16 upstream PRs** across **13 external repositories**
-  &nbsp;·&nbsp; **5 merged** &nbsp;— SymPy 1 · TheAlgorithms/Python 2 · freeCodeCamp 1 · free-programming-books 1
-  &nbsp;·&nbsp; **5 open** &nbsp;— SciPy 1 · SciPy/XSF 1 · pandas 1 · Google OR-Tools 1 · opencode 1
-  &nbsp;·&nbsp; **6 closed without merge** &nbsp;— networkx 2 · github/docs 1 · Hydra 1 · kiro-gateway 1 · pandas 1 (a duplicate, see below)
-- **`5 + 5 + 6 = 16`** &nbsp;— every upstream PR I have ever opened is itemised on this page
-- **`16 PRs = 15 distinct fixes = 13 repositories`** &nbsp;— pandas#69428 and #69429 are the same fix re-opened from a branch of the same name; #69428 was closed in favour of #69429
+- **17 pull requests to repositories I don't own**, across **14 repositories**
+  &nbsp;·&nbsp; **16 where I have no write access** &nbsp;— **5 merged** (SymPy 1 · TheAlgorithms/Python 2 · freeCodeCamp 1 · free-programming-books 1) · **5 open** (SciPy 1 · SciPy/XSF 1 · pandas 1 · Google OR-Tools 1 · opencode 1) · **6 closed without merge** (networkx 2 · github/docs 1 · Hydra 1 · kiro-gateway 1 · pandas 1)
+  &nbsp;·&nbsp; **1 where I hold collaborator write access** &nbsp;— green-mart, excluded from the upstream counts and disclosed at the end
+- **`5 + 5 + 6 = 16`** with no write access, **+ 1 collaborator = 17** in total
+- **`17 PRs = 16 distinct changes = 14 repositories`** &nbsp;— pandas#69428 and #69429 are one fix opened twice; green-mart#1 adds a file rather than fixing a bug
 
 > **All pull requests, mine and upstream alike: 200+ authored · 150+ merged.**
 > Rounded on purpose. Measured from the GitHub API on 2026-09-26 it was 206 authored
 > and 152 merged — and it moved by three pull requests during a single review pass,
-> so an exact total here would be wrong within days. 147 of the 152 merges are into a
-> repo I own or an org I belong to, which leaves **5** as the upstream merge count.
-> Of the 190 own-repository pull requests, 40 are still open and 3 were closed
-> without merging. The upstream ledger above is itemised one PR at a time, because
-> that part does not drift.
+> so an exact total here would be wrong within days. 147 of the 152 merges went to a
+> repository I could already push to, which leaves **5** as the merge count for
+> repositories I have no write access to. Of the 189 pull requests to my own
+> repositories, 40 are still open and 3 were closed without merging. The ledger above
+> is itemised one PR at a time, because that part does not drift.
 
 ### ✅ Merged upstream — 5
 
@@ -117,7 +118,16 @@ narrative to claim for any of them.
 - **github/docs** &nbsp;·&nbsp; [#46017](https://github.com/github/docs/pull/46017) — closed upstream without merge
 - **Hydra** &nbsp;·&nbsp; [#3465](https://github.com/hydra-ecosystem/hydra/pull/3465) — closed upstream without merge
 - **kiro-gateway** &nbsp;·&nbsp; [#240](https://github.com/jwadow/kiro-gateway/pull/240) — closed upstream without merge
-- **pandas** &nbsp;·&nbsp; [#69428](https://github.com/pandas-dev/pandas/pull/69428) — not a separate bug: the same fix as the live #69429 above, re-opened from a branch of the same name with a later commit, and closed in its favour
+- **pandas** &nbsp;·&nbsp; [#69428](https://github.com/pandas-dev/pandas/pull/69428) — not a separate bug: the same fix as the live #69429 above. pandas' issue-assignment bot auto-closed this one 14 seconds after it opened, because GH-39103 was not yet claimed; I ran `/take` and reopened it fresh as #69429 five minutes later, after a rebase onto the moved `main`
+
+### Excluded from the upstream count — 1
+
+*Repos: green-mart 1 = 1*
+
+Listed for completeness, because it is a pull request I opened to a repository I
+don't own and excluding it silently would make "17" wrong.
+
+- **green-mart** &nbsp;·&nbsp; [#1](https://github.com/Deb07-Ops/green-mart/pull/1) — added the repository's `SECURITY.md`. I hold collaborator write access there, so it is not an upstream contribution and it is not counted as one. It is a file addition, not a debugging fix, and it was merged the same day the repository was created.
 
 ---
 
