@@ -1,32 +1,32 @@
 <div align="center">
 
 <!-- ── Header wave ─────────────────────────────────────────── -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f172a,50:020617,100:0f172a&height=230&section=header&text=Nikhil%20Nagpure&fontSize=48&fontColor=22d3ee&animation=fadeIn&desc=5h4d0wn1k%20%7C%20Security%20Engineer%20%7C%20Systems%20Builder&descSize=20&descAlignY=62" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f172a,50:020617,100:0f172a&height=230&section=header&text=Nikhil%20Nagpure&fontSize=48&fontColor=22d3ee&animation=fadeIn&desc=5h4d0wn1k%20%7C%20Security%20Engineer%20%7C%20Systems%20Builder&descSize=20&descAlignY=62" width="100%" alt="Nikhil Nagpure" />
 
 <!-- ── Typing rotator ──────────────────────────────────────── -->
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=2600&pause=900&color=22d3ee&center=true&vCenter=true&width=740&lines=Offensive+Security+Practitioner;Autonomous+Red-Team+Tooling;AI%2FLLM+Security+Engineering;Hardware+%2B+Wireless+Pentesting;Open+Source+Contributor;Founder+%40+Shadownik" width="100%" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=2600&pause=900&color=22d3ee&center=true&vCenter=true&width=740&lines=Offensive+Security+Practitioner;Autonomous+Red-Team+Tooling;AI%2FLLM+Security+Engineering;Hardware+%2B+Wireless+Pentesting;Open+Source+Contributor;Founder+%40+Shadownik" width="100%" alt="Offensive Security Practitioner, Autonomous Red-Team Tooling, AI/LLM Security Engineering, Hardware   Wireless Pentesting, Open Source Contributor, Founder @ Shadownik" />
 
 <!-- ── Stats strip ─────────────────────────────────────────── -->
-<img src="https://komarev.com/ghpvc/?username=5h4d0wn1k&label=PROFILE+VIEWS&color=22d3ee&style=for-the-badge" />
+<img src="https://komarev.com/ghpvc/?username=5h4d0wn1k&label=PROFILE+VIEWS&color=22d3ee&style=for-the-badge" alt="Profile views" />
 &nbsp;&nbsp;
-<a href="https://github.com/5h4d0wn1k"><img src="https://img.shields.io/github/followers/5h4d0wn1k?style=for-the-badge&label=Followers&color=22d3ee" /></a>
+<a href="https://github.com/5h4d0wn1k"><img src="https://img.shields.io/github/followers/5h4d0wn1k?style=for-the-badge&label=Followers&color=22d3ee" alt="Followers" /></a>
 &nbsp;&nbsp;
-<a href="https://github.com/5h4d0wn1k?tab=repositories"><img src="https://img.shields.io/badge/Repositories-243-0f172a?style=for-the-badge" /></a>
+<a href="https://github.com/5h4d0wn1k?tab=repositories"><img src="https://img.shields.io/badge/Repositories-0f172a?style=for-the-badge" alt="Repositories-0f172a?style=for-the" /></a>
 &nbsp;&nbsp;
-<a href="https://github.com/5h4d0wn1k/5h4d0wn1k/issues"><img src="https://img.shields.io/github/issues/5h4d0wn1k/5h4d0wn1k?style=for-the-badge&label=Issues&color=22d3ee" /></a>
+<a href="https://github.com/5h4d0wn1k/5h4d0wn1k/issues"><img src="https://img.shields.io/github/issues/5h4d0wn1k/5h4d0wn1k?style=for-the-badge&label=Issues&color=22d3ee" alt="Issues" /></a>
 &nbsp;&nbsp;
-<a href="https://github.com/5h4d0wn1k/5h4d0wn1k/pulls"><img src="https://img.shields.io/github/issues-pr/5h4d0wn1k/5h4d0wn1k?style=for-the-badge&label=PRs&color=22d3ee" /></a>
+<a href="https://github.com/5h4d0wn1k/5h4d0wn1k/pulls"><img src="https://img.shields.io/github/issues-pr/5h4d0wn1k/5h4d0wn1k?style=for-the-badge&label=PRs&color=22d3ee" alt="PRs" /></a>
 &nbsp;&nbsp;
-<img src="https://img.shields.io/github/license/5h4d0wn1k/5h4d0wn1k?style=for-the-badge&label=License&color=22d3ee" />
+<img src="https://img.shields.io/github/license/5h4d0wn1k/5h4d0wn1k?style=for-the-badge&label=License&color=22d3ee" alt="License" />
 
 <br/>
 
 <p>
-  <a href="https://www.linkedin.com/in/nikhilnagpure24/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
-  <a href="https://github.com/5h4d0wn1k"><img src="https://img.shields.io/badge/GitHub-111827?style=for-the-badge&logo=github&logoColor=white" /></a>
-  <a href="https://cynik-operator.pages.dev"><img src="https://img.shields.io/badge/Portfolio-0891b2?style=for-the-badge&logo=vercel&logoColor=white" /></a>
-  <a href="https://streak-stats.demolab.com?user=5h4d0wn1k"><img src="https://img.shields.io/github/last-commit/5h4d0wn1k/5h4d0wn1k?style=for-the-badge&label=Last+Commit&color=22d3ee" /></a>
-  <a href="mailto:nikhilnagpure203@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" /></a>
+  <a href="https://www.linkedin.com/in/nikhilnagpure24/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn-0A66C2?style=for-the" /></a>
+  <a href="https://github.com/5h4d0wn1k"><img src="https://img.shields.io/badge/GitHub-111827?style=for-the-badge&logo=github&logoColor=white" alt="GitHub-111827?style=for-the" /></a>
+  <a href="https://cynik-operator.pages.dev"><img src="https://img.shields.io/badge/Portfolio-0891b2?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio-0891b2?style=for-the" /></a>
+  <a href="https://streak-stats.demolab.com?user=5h4d0wn1k"><img src="https://img.shields.io/github/last-commit/5h4d0wn1k/5h4d0wn1k?style=for-the-badge&label=Last+Commit&color=22d3ee" alt="Last Commit" /></a>
+  <a href="mailto:nikhilnagpure203@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email-EA4335?style=for-the" /></a>
 </p>
 
 </div>
@@ -41,7 +41,7 @@ tools shipped and a focus on systems that stay maintainable as they grow.
 
 <table>
   <tr>
-    <td width="110" align="center"><b>Identity</b></td>
+    <td width="200" align="center"><b>Identity</b></td>
     <td>
       <b>Nikhil Nagpure</b> · <code>5h4d0wn1k</code><br/>
       <sub>🌍 Open to relocation & frequent travel · always exploring somewhere new</sub>
@@ -79,58 +79,58 @@ tools shipped and a focus on systems that stay maintainable as they grow.
 <p align="center">
   <b>Focus areas</b>
   <br/>
-  <img src="https://img.shields.io/badge/Offensive%20Security-red?style=flat-square" />
-  <img src="https://img.shields.io/badge/Red%20Teaming-darkred?style=flat-square" />
-  <img src="https://img.shields.io/badge/API%20Security-22d3ee?style=flat-square" />
-  <img src="https://img.shields.io/badge/LLM%20Security-a21caf?style=flat-square" />
-  <img src="https://img.shields.io/badge/Hardware%20%26%20Wireless-14b8a6?style=flat-square" />
-  <img src="https://img.shields.io/badge/Secure%20Full--Stack-eab308?style=flat-square" />
+  <img src="https://img.shields.io/badge/Offensive%20Security-red?style=flat-square" alt="Offensive Security-red?style=flat" />
+  <img src="https://img.shields.io/badge/Red%20Teaming-darkred?style=flat-square" alt="Red Teaming-darkred?style=flat" />
+  <img src="https://img.shields.io/badge/API%20Security-22d3ee?style=flat-square" alt="API Security-22d3ee?style=flat" />
+  <img src="https://img.shields.io/badge/LLM%20Security-a21caf?style=flat-square" alt="LLM Security-a21caf?style=flat" />
+  <img src="https://img.shields.io/badge/Hardware%20%26%20Wireless-14b8a6?style=flat-square" alt="Hardware &amp; Wireless-14b8a6?style=flat" />
+  <img src="https://img.shields.io/badge/Secure%20Full--Stack-eab308?style=flat-square" alt="Secure Full--Stack-eab308?style=flat" />
 </p>
 
 <p align="center">
   <b>Core stack</b>
   <br/>
-  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" />
-  <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=flat-square&logo=c%2B%2B&logoColor=white" />
-  <img src="https://img.shields.io/badge/Solidity-363636?style=flat-square&logo=solidity&logoColor=white" />
-  <img src="https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white" />
-  <img src="https://img.shields.io/badge/Dart-0175C2?style=flat-square&logo=dart&logoColor=white" />
-  <img src="https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=mysql&logoColor=white" />
-  <img src="https://img.shields.io/badge/Java-E34F26?style=flat-square&logo=java&logoColor=white" />
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python-3776AB?style=flat" />
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript-3178C6?style=flat" />
+  <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=flat-square&logo=c%2B%2B&logoColor=white" alt="C++-00599C?style=flat" />
+  <img src="https://img.shields.io/badge/Solidity-363636?style=flat-square&logo=solidity&logoColor=white" alt="Solidity-363636?style=flat" />
+  <img src="https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white" alt="Rust-000000?style=flat" />
+  <img src="https://img.shields.io/badge/Dart-0175C2?style=flat-square&logo=dart&logoColor=white" alt="Dart-0175C2?style=flat" />
+  <img src="https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=mysql&logoColor=white" alt="SQL-4479A1?style=flat" />
+  <img src="https://img.shields.io/badge/Java-E34F26?style=flat-square&logo=java&logoColor=white" alt="Java-E34F26?style=flat" />
 </p>
 
 <p align="center">
   <b>Certifications</b>
   <br/>
-  <img src="https://img.shields.io/badge/CEH-e63946?style=flat-square" />
-  <img src="https://img.shields.io/badge/CNSP-457b9d?style=flat-square" />
-  <img src="https://img.shields.io/badge/PEH%20(TCM)-6d6875?style=flat-square" />
-  <img src="https://img.shields.io/badge/IELTS%207.5%20(C1)-2a9d8f?style=flat-square" />
+  <img src="https://img.shields.io/badge/CEH-e63946?style=flat-square" alt="CEH-e63946?style=flat" />
+  <img src="https://img.shields.io/badge/CNSP-457b9d?style=flat-square" alt="CNSP-457b9d?style=flat" />
+  <img src="https://img.shields.io/badge/PEH%20(TCM)-6d6875?style=flat-square" alt="PEH (TCM)-6d6875?style=flat" />
+  <img src="https://img.shields.io/badge/IELTS%207.5%20(C1)-2a9d8f?style=flat-square" alt="IELTS 7.5 (C1)-2a9d8f?style=flat" />
 </p>
 
 <p align="center">
   <b>Communities</b>
   <br/>
-  <img src="https://img.shields.io/badge/DEFCON%20Franklin%20Security-black?style=flat-square" />
-  <img src="https://img.shields.io/badge/Cyber%20Expert%20-%20Ministry%20of%20Home%20Affairs%20(India)-1f5c8b?style=flat-square" />
+  <img src="https://img.shields.io/badge/DEFCON%20Franklin%20Security-black?style=flat-square" alt="DEFCON Franklin Security-black?style=flat" />
+  <img src="https://img.shields.io/badge/Cyber%20Expert%20-%20Ministry%20of%20Home%20Affairs%20(India)-1f5c8b?style=flat-square" alt="Cyber Expert - Ministry of Home Affairs (India)-1f5c8b?style=flat" />
 </p>
 
 ## 🧰 Tech Stack
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
-  <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" />
-  <img src="https://img.shields.io/badge/Solidity-363636?style=for-the-badge&logo=solidity&logoColor=white" />
-  <img src="https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white" />
-  <img src="https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white" />
-  <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" />
-  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" />
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
-  <img src="https://img.shields.io/badge/Offensive%20Security-22d3ee?style=for-the-badge&logo=hackaday&logoColor=0f172a" />
-  <img src="https://img.shields.io/badge/Hashcat-123456?style=for-the-badge&logo=hashnode&logoColor=white" />
-  <img src="https://img.shields.io/badge/KaliLinux-557C94?style=for-the-badge&logo=kalilinux&logoColor=white" />
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python-3776AB?style=for-the" />
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript-3178C6?style=for-the" />
+  <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++-00599C?style=for-the" />
+  <img src="https://img.shields.io/badge/Solidity-363636?style=for-the-badge&logo=solidity&logoColor=white" alt="Solidity-363636?style=for-the" />
+  <img src="https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white" alt="Dart-0175C2?style=for-the" />
+  <img src="https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white" alt="Rust-000000?style=for-the" />
+  <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js-000000?style=for-the" />
+  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux-FCC624?style=for-the" />
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker-2496ED?style=for-the" />
+  <img src="https://img.shields.io/badge/Offensive%20Security-22d3ee?style=for-the-badge&logo=hackaday&logoColor=0f172a" alt="Offensive Security-22d3ee?style=for-the" />
+  <img src="https://img.shields.io/badge/Hashcat-123456?style=for-the-badge&logo=hashcat&logoColor=white" alt="Hashcat-123456?style=for-the" />
+  <img src="https://img.shields.io/badge/KaliLinux-557C94?style=for-the-badge&logo=kalilinux&logoColor=white" alt="KaliLinux-557C94?style=for-the" />
 </p>
 
 ---
@@ -201,8 +201,8 @@ The current effort — **autonomous offensive/defensive security tooling** for a
 ## 🌍 Open Source Contributions
 
 <table>
-  <tr><td width="40%"><b>Contributions</b></td><td><b>3,003 in 2026</b> · 631 last week · 174 active days this year</td></tr>
-  <tr><td><b>Pull Requests</b></td><td>134 authored · <b>95 merged</b></td></tr>
+  <tr><td width="40%"><b>Contributions</b></td><td><b>3,000+ in 2026</b> · 174 active days this year</td></tr>
+  <tr><td><b>Pull Requests</b></td><td>200+ authored · <b>150+ merged</b></td></tr>
   <tr><td><b>Repos on GitHub</b></td><td>243 · 230 built from scratch · 770+ total stars</td></tr>
   <tr><td><b>Organizations</b></td><td>3 orgs · 20 repos (Shadownik · Cuboidsoft · CuboidPilot)</td></tr>
 </table>
@@ -213,7 +213,7 @@ Active contributor to major upstream projects:
 - **freeCodeCamp** — [truthy/falsy curriculum fix](https://github.com/freeCodeCamp/freeCodeCamp/pull/70289) → **merged**
 - **pandas** — [GroupBy.agg MultiIndex bug](https://github.com/pandas-dev/pandas/pull/69429) (open)
 - **scipy** — [duplicate CSR entries in bipartite matching](https://github.com/scipy/scipy/pull/26242) (open)
-- **SymPy** — [solve domain fix](https://github.com/sympy/sympy/pull/30567) (open)
+- **SymPy** — [solve domain fix](https://github.com/sympy/sympy/pull/30567) (merged)
 - **EbookFoundation/free-programming-books** — [dead-link repair via Wayback](https://github.com/EbookFoundation/free-programming-books/pull/13472) (open)
 
 ---
@@ -223,9 +223,9 @@ Active contributor to major upstream projects:
 <div align="center">
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=5h4d0wn1k&theme=tokyonight&hide_border=true" width="100%" alt="Profile Summary" />
   <br/><br/>
-  <img height="160em" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=5h4d0wn1k&theme=tokyonight&hide_border=true" />
-  <img height="160em" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=5h4d0wn1k&theme=tokyonight&hide_border=true" />
-  <img height="160em" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=5h4d0wn1k&theme=tokyonight&hide_border=true" />
+  <img height="160em" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=5h4d0wn1k&theme=tokyonight&hide_border=true" alt="GitHub statistics summary card" />
+  <img height="160em" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=5h4d0wn1k&theme=tokyonight&hide_border=true" alt="Repositories per language summary card" />
+  <img height="160em" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=5h4d0wn1k&theme=tokyonight&hide_border=true" alt="Most committed language summary card" />
   <br/>
   <img src="https://streak-stats.demolab.com?user=5h4d0wn1k&theme=tokyonight&hide_border=true&background=0F172A" alt="Streak Stats" />
   <br/>
@@ -246,10 +246,10 @@ Active contributor to major upstream projects:
 ## 📬 Let's Connect
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/nikhilnagpure24/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
-  <a href="https://github.com/5h4d0wn1k"><img src="https://img.shields.io/badge/GitHub-111827?style=for-the-badge&logo=github&logoColor=white" /></a>
-  <a href="https://cynik-operator.pages.dev"><img src="https://img.shields.io/badge/Portfolio-0891b2?style=for-the-badge&logo=vercel&logoColor=white" /></a>
-  <a href="mailto:nikhilnagpure203@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" /></a>
+  <a href="https://www.linkedin.com/in/nikhilnagpure24/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn-0A66C2?style=for-the" /></a>
+  <a href="https://github.com/5h4d0wn1k"><img src="https://img.shields.io/badge/GitHub-111827?style=for-the-badge&logo=github&logoColor=white" alt="GitHub-111827?style=for-the" /></a>
+  <a href="https://cynik-operator.pages.dev"><img src="https://img.shields.io/badge/Portfolio-0891b2?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio-0891b2?style=for-the" /></a>
+  <a href="mailto:nikhilnagpure203@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email-EA4335?style=for-the" /></a>
 </p>
 
 ---
@@ -258,6 +258,6 @@ Active contributor to major upstream projects:
 
 *"Build secure systems. Solve real problems. Create measurable impact."*
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f172a,50:020617,100:0f172a&height=120&section=footer&text=Thanks%20for%20visiting&fontSize=22&fontColor=22d3ee&animation=fadeIn" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f172a,50:020617,100:0f172a&height=120&section=footer&text=Thanks%20for%20visiting&fontSize=22&fontColor=22d3ee&animation=fadeIn" width="100%" alt="Thanks for visiting" />
 
 </div>
