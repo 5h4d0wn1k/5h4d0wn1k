@@ -393,6 +393,102 @@ def _u_fetch_http_error_not_retried():
     assert len(calls) == 1, f"retried a definitive answer: {calls}"
 
 
+# ── the concurrency must not change a single verdict ───────────────────────────
+# check_all() runs the fetches in a thread pool, which means a URL can be judged
+# in any order and a shared transport can be entered at any point. The report
+# therefore has to be a function of the inputs alone, or the same page would
+# produce different output depending on which host happened to be slow.
+def _route_opener(routes):
+    """An opener that answers from a {url: response} map, and records the order."""
+    seen = []
+
+    def opener(req, timeout=None):
+        seen.append(req.full_url)
+        r = routes.get(req.full_url, GOOD_SVG)
+        if isinstance(r, Exception):
+            raise r
+        return _Resp(r)
+    return opener, seen
+
+
+MIXED = {
+    IELTS: GOOD_SVG,
+    "https://img.shields.io/github/repos-5h4d0wn1k": DEAD_SVG,
+    "https://img.shields.io/badge/x%20(y)-blue": GOOD_SVG,
+    "https://www.linkedin.com/in/x/": GOOD_SVG,
+    "https://cuboidsoft.in": GOOD_SVG,
+    "https://e.com/ok": GOOD_SVG,
+    "https://e.com/forbidden": urllib.error.HTTPError("u", 403, "no", {}, None),
+    "https://e.com/gone": urllib.error.HTTPError("u", 404, "no", {}, None),
+}
+MIXED_URLS = sorted(MIXED)
+
+
+def _u_check_one_badge_ok():
+    op, _ = _route_opener(MIXED)
+    assert ru.check_one(IELTS, opener=op, sleeper=lambda *_: None) == ("ok", "badge")
+
+
+def _u_check_one_badge_dead():
+    op, _ = _route_opener(MIXED)
+    v, d = ru.check_one("https://img.shields.io/github/repos-5h4d0wn1k",
+                        opener=op, sleeper=lambda *_: None)
+    assert v == "bad" and "badge not found" in d, (v, d)
+
+
+def _u_check_one_badge_not_svg():
+    op, _ = _route_opener({"https://img.shields.io/x": b"<html>nope</html>"})
+    v, d = ru.check_one("https://img.shields.io/x", opener=op, sleeper=lambda *_: None)
+    assert v == "bad" and d == "not an SVG", (v, d)
+
+
+def _u_check_one_bot_blocked_warns():
+    op, calls = _route_opener(MIXED)
+    v, d = ru.check_one("https://www.linkedin.com/in/x/", opener=op, sleeper=lambda *_: None)
+    assert (v, d) == ("warn", "bot-blocked host, skipped"), (v, d)
+    assert calls == [], f"should not have been fetched at all: {calls}"
+
+
+def _u_check_one_link_ok():
+    op, _ = _route_opener(MIXED)
+    assert ru.check_one("https://e.com/ok", opener=op, sleeper=lambda *_: None) == ("ok", "")
+
+
+def _u_check_one_403_warns():
+    op, _ = _route_opener(MIXED)
+    v, d = ru.check_one("https://e.com/forbidden", opener=op, sleeper=lambda *_: None)
+    assert v == "warn" and d == "403 bot-blocked", (v, d)
+
+
+def _u_check_one_404_fails():
+    op, calls = _route_opener(MIXED)
+    v, d = ru.check_one("https://e.com/gone", opener=op, sleeper=lambda *_: None)
+    assert v == "bad" and d == "404 on two consecutive attempts", (v, d)
+    assert len(calls) == 1, f"a definitive 404 was retried: {calls}"
+
+
+def _u_check_all_matches_sequential():
+    """The whole point: 1 worker and 8 workers must agree exactly."""
+    op1, seen1 = _route_opener(MIXED)
+    op8, seen8 = _route_opener(MIXED)
+    seq = ru.check_all(MIXED_URLS, workers=1, opener=op1, sleeper=lambda *_: None)
+    par = ru.check_all(MIXED_URLS, workers=8, opener=op8, sleeper=lambda *_: None)
+    assert seq == par, f"\n  sequential: {seq}\n  parallel:   {par}"
+    # and the outcome is the one the table above says it should be
+    bad, warned, good, total = par
+    assert total == len(MIXED_URLS)
+    assert good == 2, f"badges counted: {good}"
+    assert len(warned) == 3, f"warned: {warned}"
+    assert len(bad) == 2, f"bad: {bad}"
+
+
+def _u_check_all_single_url_sequential():
+    """A one-URL page must not spin up a pool."""
+    op, _ = _route_opener({"https://e.com/ok": GOOD_SVG})
+    assert ru.check_all(["https://e.com/ok"], workers=8,
+                        opener=op, sleeper=lambda *_: None)[3] == 1
+
+
 UNIT = [v for k, v in sorted(globals().items()) if k.startswith("_u_")]
 
 

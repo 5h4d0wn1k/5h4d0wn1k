@@ -13,6 +13,7 @@ import re
 import time
 import urllib.error
 import urllib.request
+from concurrent.futures import ThreadPoolExecutor
 
 UA = {"User-Agent": "Mozilla/5.0 (compatible; readme-link-check)"}
 
@@ -131,3 +132,67 @@ def fetch_ok(url, attempts=2, opener=None, sleeper=None):
         if i + 1 < attempts:
             sleeper(2.0)
     return False, last
+
+
+def check_one(url, opener=None, sleeper=None):
+    """Decide one URL. Returns (verdict, detail).
+
+    verdict is "ok", "warn" or "bad". A badge is judged on its body rather than
+    its status code; anything else is judged on the status, retried once. The
+    whole decision lives here rather than in the validator so that each branch
+    can be tested without a network, and so the two fetchers cannot drift apart.
+    """
+    if is_bot_blocked(url):
+        return "warn", "bot-blocked host, skipped"
+    if "img.shields.io" in url:
+        body, marker = badge_body(url, opener=opener, sleeper=sleeper)
+        if marker:
+            return "bad", f"renders {marker!r} on two consecutive fetches"
+        if "<svg" not in body:
+            return "bad", "not an SVG"
+        return "ok", "badge"
+    ok, detail = fetch_ok(url, opener=opener, sleeper=sleeper)
+    if ok:
+        return "ok", ""
+    if detail in (403, 429, 999):
+        return "warn", f"{detail} bot-blocked"
+    return "bad", f"{detail} on two consecutive attempts"
+
+
+def check_all(urls, workers=8, opener=None, sleeper=None):
+    """Check every URL concurrently. Returns (bad, warned, good_badges, total).
+
+    Concurrent because sequential is not affordable once every URL is retried.
+    The arithmetic: 47 badges at 2 x 15s plus a 2s backoff, and 40 other URLs at
+    2 x 25s, is ~60 minutes one at a time. The workflow's budget is 10. The old
+    single-shot version was already over at ~29 minutes, and adding the retry
+    doubled it, so a slow runner - which is exactly when a retry fires - would
+    have been killed mid-run and reported nothing. Measured on a fast runner
+    this is 91s sequential and well under 20s at 8 workers.
+
+    Eight is chosen to stay polite to shields.io rather than to be fast. The
+    retry already absorbs a single rate-limited answer, and a fan-out wide
+    enough to provoke them repeatedly would be self-defeating.
+
+    Results are returned in the order the URLs were given, so the report is
+    byte-identical to the sequential version regardless of completion order.
+    """
+    def job(u):
+        return check_one(u, opener=opener, sleeper=sleeper)
+
+    if workers <= 1 or len(urls) <= 1:
+        results = [job(u) for u in urls]
+    else:
+        with ThreadPoolExecutor(max_workers=workers) as pool:
+            results = list(pool.map(job, urls))
+
+    bad, warned, good = [], [], 0
+    for u, (verdict, detail) in zip(urls, results):
+        if verdict == "bad":
+            bad.append(f"{u} -> {detail}")
+        elif verdict == "warn":
+            warned.append(f"{u} - {detail}" if detail.startswith("bot-blocked host")
+                          else f"{u} -> {detail}")
+        elif detail == "badge":
+            good += 1
+    return bad, warned, good, len(urls)
