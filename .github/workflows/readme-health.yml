@@ -30,7 +30,13 @@ jobs:
   validate-readme:
     name: Validate README links and badges
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    # Every URL is retried once, so the worst case is not the number of URLs but
+    # the number of URLs times the timeout. Sequential that was ~60 minutes
+    # against a 10 minute budget - a slow runner would have been killed mid-run
+    # and reported nothing at all, which is the failure that looks like "no
+    # news". The fetches now run 8-wide (~8 minutes worst case, 52s measured),
+    # and 20 leaves headroom for a runner slower than this machine.
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v7
 
@@ -54,6 +60,45 @@ jobs:
       # README would still pass, just less thoroughly than before.
       - name: Mutation-test the validator
         run: python scripts/test_validate_readme.py
+
+      # A scheduled run that fails prints one line and is gone, so a badge that
+      # dies between pull requests leaves no record of which URL died or when.
+      # Keeping the report as an artifact makes the decay trackable after the
+      # fact instead of only at the moment it is noticed.
+      - name: Keep the URL report
+        if: always()
+        run: |
+          mkdir -p readme-health
+          python scripts/validate_readme.py README.md --offline \
+            > readme-health/validate.txt 2>&1 || true
+          python scripts/validate_readme.py README.md --list-urls \
+            > readme-health/urls.txt
+          {
+            echo "# README health report"
+            echo
+            echo "Checked $(date -u +%FT%TZ) at commit $GITHUB_SHA"
+            echo
+            echo "## Validation"
+            echo
+            echo '```'
+            cat readme-health/validate.txt
+            echo '```'
+            echo
+            echo "## The $(wc -l < readme-health/urls.txt) URLs checked at this commit"
+            echo
+            echo "Kept so a badge that dies between pull requests can be traced to the"
+            echo "exact URL and the commit it was last known good at."
+            echo
+            sed 's/^/- /' readme-health/urls.txt
+          } > readme-health/report.md
+
+      - name: Upload the report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: readme-health-${{ github.run_number }}
+          path: readme-health/
+          retention-days: 30
 
       - name: Summarise
         if: always()

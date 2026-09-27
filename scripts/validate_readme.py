@@ -14,17 +14,25 @@ Exit: 0 = all checks pass, 1 = at least one FAIL
 import os
 import re
 import sys
-import time
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from readme_urls import badge_body, fetch_ok, harvest_urls, is_bot_blocked  # noqa: E402
+from readme_urls import check_all, harvest_urls  # noqa: E402
 # Not imported deliberately: html.unescape() corrupts the URLs this file
 # collects, because entity names that look like URL parameters decode too.
 # See the comment on the URL harvest in section 7.
 
 STRICT = "--strict" in sys.argv
+# Concurrent URL fetches. Low enough to stay polite to shields.io, high enough
+# that a retried run fits the workflow's budget. 1 makes it sequential.
+NETWORK_WORKERS = int(os.environ.get("README_NETWORK_WORKERS", "8"))
+
 NET = "--offline" not in sys.argv
 path = next((a for a in sys.argv[1:] if not a.startswith("--")), "README.md")
+
+# Print the URL set and stop. The weekly run keeps this as an artifact, so a
+# badge that dies between pull requests leaves a record of what was being
+# checked when it died, instead of one aggregated line and no trace.
+LIST_URLS = "--list-urls" in sys.argv
 
 FAIL, WARN, OK = [], [], []
 
@@ -512,45 +520,26 @@ else:
 # was wrong for a long time and nothing noticed.
 urls = harvest_urls(raw)
 
+if LIST_URLS:
+    for u in sorted(harvest_urls(raw)):
+        print(u)
+    sys.exit(0)
+
 if NET:
-    bad = []
-    good_badges = 0
-    for u in sorted(urls):
-        if is_bot_blocked(u):
-            warn("url", f"{u} - bot-blocked host, skipped")
-            continue
-        try:
-            # Badge hosts are asked for the body, not just the status. shields.io
-            # answers 200 for an endpoint it no longer serves and puts
-            # "404: badge not found" in the SVG, so a HEAD-only check certifies a
-            # broken badge. This was found the hard way: the Repositories badge had
-            # been returning an error body for months and passed every check.
-            # badge_body owns the whole fetch for a badge, so it is not also
-            # requested here - one fetch per attempt, not two.
-            if "img.shields.io" in u:
-                body, marker = badge_body(u)
-                if marker:
-                    bad.append(f"{u} -> renders {marker!r} on two consecutive fetches")
-                elif "<svg" not in body:
-                    bad.append(f"{u} -> not an SVG")
-                else:
-                    good_badges += 1
-                time.sleep(0.3)
-                continue
-            ok_, detail = fetch_ok(u)
-            if ok_:
-                continue
-            if detail in (403, 429, 999):
-                warn("url", f"{u} -> {detail} bot-blocked")
-            else:
-                bad.append(f"{u} -> {detail} on two consecutive attempts")
-        except Exception as e:
-            # badge_body only raises on a transport failure, which fetch_ok
-            # absorbs. Reaching here means something escaped both.
-            bad.append(f"{u} -> {type(e).__name__}: {e}")
+    # Badge hosts are asked for the body, not just the status. shields.io
+    # answers 200 for an endpoint it no longer serves and puts
+    # "404: badge not found" in the SVG, so a HEAD-only check certifies a
+    # broken badge. This was found the hard way: the Repositories badge had
+    # been returning an error body for months and passed every check.
+    #
+    # check_all() does the per-URL deciding and runs the fetches concurrently;
+    # see its docstring for why sequential no longer fits the budget.
+    bad, warned, good_badges, n_urls = check_all(sorted(urls), workers=NETWORK_WORKERS)
+    for w in warned:
+        warn("url", w)
     for b in bad:
         fail("url", b)
-    ok("url", f"{len(urls)} unique URLs checked, "
+    ok("url", f"{n_urls} unique URLs checked, "
        f"{good_badges} badge bodies inspected and rendering a real value")
 else:
     warn("url", f"{len(urls)} URLs NOT checked (--offline)")
