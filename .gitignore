@@ -5,3 +5,7 @@
 /build_readme.py
 .scratch/
 /validate_readme.py
+# A stray __pycache__ is easy to create by hand while poking at the validator,
+# and a committed .pyc can be loaded in preference to the source it came from.
+__pycache__/
+*.pyc
