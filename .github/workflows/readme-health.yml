@@ -38,10 +38,14 @@ jobs:
     # and 20 leaves headroom for a runner slower than this machine.
     timeout-minutes: 20
     steps:
-      - uses: actions/checkout@v7
+      # Pinned to a commit SHA, not a tag. A tag is a mutable pointer, so anyone
+      # who can move v7 controls the code this workflow runs, on a repository
+      # whose whole subject is security tooling. dependabot.yml tracks these and
+      # will keep proposing the bump, so pinning does not mean falling behind.
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
 
       - name: Set up Python
-        uses: actions/setup-python@v7
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7
         with:
           python-version: "3.12"
 
@@ -94,7 +98,7 @@ jobs:
 
       - name: Upload the report
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
         with:
           name: readme-health-${{ github.run_number }}
           path: readme-health/
