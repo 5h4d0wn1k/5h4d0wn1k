@@ -177,9 +177,9 @@ The current effort — **autonomous offensive/defensive security tooling** for a
 - Ship on company strategy, branding, and go-to-market — service packaging, proposal writing, and technical client presentations.
 
 ### Founder — [Shadownik](https://cynik-operator.pages.dev) · Freelance Venture (Jun 2024 - Present)
-- Built and scaled a multi-service freelance venture across cybersecurity, full-stack engineering, cloud deployment, and digital operations.
-- Delivered secure production systems and offensive security assessments for real-world clients.
-- Leading product development across the security tooling line and multiple automation-focused services.
+- Build and scale a multi-service freelance venture across cybersecurity, full-stack engineering, cloud deployment, and digital operations.
+- Deliver secure production systems and offensive security assessments for real-world clients.
+- Lead product development across the security tooling line and multiple automation-focused services.
 
 ### Founding SWE — Pawan Technologies (Oct 2025 - Feb 2026)
 - Developed responsive production web apps and scalable backend APIs.
