@@ -203,7 +203,7 @@ The current effort — **autonomous offensive/defensive security tooling** for a
 <table>
   <tr><td width="40%"><b>Contributions</b></td><td><b>3,000+ in 2026</b> · 174 active days this year</td></tr>
   <tr><td><b>Pull Requests</b></td><td>200+ authored · <b>150+ merged</b></td></tr>
-  <tr><td><b>Repos on GitHub</b></td><td>243 · 230 built from scratch · 770+ total stars</td></tr>
+  <tr><td><b>Repos on GitHub</b></td><td>248 · 230 built from scratch · 770+ total stars</td></tr>
   <tr><td><b>Organizations</b></td><td>3 orgs · 20 repos (Shadownik · Cuboidsoft · CuboidPilot)</td></tr>
 </table>
 
@@ -214,7 +214,7 @@ Active contributor to major upstream projects:
 - **pandas** — [GroupBy.agg MultiIndex bug](https://github.com/pandas-dev/pandas/pull/69429) (open)
 - **scipy** — [duplicate CSR entries in bipartite matching](https://github.com/scipy/scipy/pull/26242) (open)
 - **SymPy** — [solve domain fix](https://github.com/sympy/sympy/pull/30567) (merged)
-- **EbookFoundation/free-programming-books** — [dead-link repair via Wayback](https://github.com/EbookFoundation/free-programming-books/pull/13472) (open)
+- **EbookFoundation/free-programming-books** — [dead-link repair via Wayback](https://github.com/EbookFoundation/free-programming-books/pull/13472) (merged)
 
 ---
 
