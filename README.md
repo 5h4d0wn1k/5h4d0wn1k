@@ -184,13 +184,13 @@ The current effort — **autonomous offensive/defensive security tooling** for a
 - Deliver secure production systems and offensive security assessments for real-world clients.
 - Lead product development for ApiSecPlatform and multiple automation-focused services.
 
-### Founding SWE — Pawan Technologies (Sep 2025 - Present)
-- Developing responsive production web apps and scalable backend APIs.
-- Building integrations, database workflows, and cloud-ready deployment pipelines.
+### Founding SWE — Pawan Technologies (Sep 2025 - Feb 2026)
+- Developed responsive production web apps and scalable backend APIs.
+- Built integrations, database workflows, and cloud-ready deployment pipelines.
 
-### Offensive Cybersecurity Intern — InLighnX Global Pvt. Ltd. (Jun 2025 - Present)
-- Performing web application security assessments (OWASP Top 10, Burp Suite, Metasploit), threat modeling, and red-team simulations.
-- Contributing to large-scale IT infrastructure defense: intrusion detection monitoring, vulnerability triage, and security reporting.
+### Offensive Cybersecurity Intern — InLighnX Global Pvt. Ltd. (Jun 2025 - Dec 2025)
+- Performed web application security assessments (OWASP Top 10, Burp Suite, Metasploit), threat modeling, and red-team simulations.
+- Contributed to large-scale IT infrastructure defense: intrusion detection monitoring, vulnerability triage, and security reporting.
 
 ### Ethical Hacking Intern — Internship Studio (Nov 2023 - Dec 2023)
 - Identified and mitigated XSS vulnerabilities in production web applications; authored remediation reports.
