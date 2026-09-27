@@ -1,13 +1,39 @@
 name: README Health Check
 
 on:
+  # Deliberately no `paths` filter on pull_request. This job is a required
+  # status check on main, and a required check that a workflow is not allowed to
+  # run leaves the pull request blocked forever. With a paths filter, a pull
+  # request touching only SECURITY.md or CONTRIBUTING.md matches nothing, the
+  # check never reports, and the pull request is unmergeable with nothing on it
+  # to fix. That is not hypothetical - it is what happened to #27.
+  #
+  # It is also the wrong trade anyway: the link check is the only automated
+  # review in this repository, and badge hosts rot on their own schedule. A
+  # weekly run catches the slow decay; running it on every pull request catches
+  # it while it is still someone's pull request.
   pull_request:
-    paths: ["README.md", ".github/**"]
+  # Kept on push. Re-running the whole sweep on every merge to main costs a
+  # runner to re-confirm what the pull request that caused it already proved.
   push:
     branches: [main]
-    paths: ["README.md", ".github/**"]
+    paths: ["README.md", "scripts/**", ".github/**"]
   schedule:
+    # Weekly. The README is mostly live badges, so it rots between pull requests:
+    # a service can be retired, an endpoint removed, or a repository renamed with
+    # nothing in the repository changing at all. This is the run that catches it.
     - cron: "0 0 * * 1"
+  workflow_dispatch:
+    inputs:
+      strict:
+        description: >-
+          Audit-hard mode. Also fails on warnings, which currently means the
+          six advisory content-model checks (pr-listed, pr-section, pr-count,
+          own-split, own-count, headline-claim), the no-H1 note, and any
+          bot-blocked host. Expect it to fail on the profile as written: it is
+          for surveying the full picture, not for gating a push.
+        type: boolean
+        default: false
 
 permissions:
   contents: read
@@ -16,50 +42,93 @@ jobs:
   validate-readme:
     name: Validate README links and badges
     runs-on: ubuntu-latest
+    # Every URL is retried once, so the worst case is not the number of URLs but
+    # the number of URLs times the timeout. Sequential that was ~60 minutes
+    # against a 10 minute budget - a slow runner would have been killed mid-run
+    # and reported nothing at all, which is the failure that looks like "no
+    # news". The fetches now run 8-wide (~8 minutes worst case, 52s measured),
+    # and 20 leaves headroom for a runner slower than this machine.
+    timeout-minutes: 20
     steps:
-      - uses: actions/checkout@v7
+      # Pinned to a commit SHA, not a tag. A tag is a mutable pointer, so anyone
+      # who can move v7 controls the code this workflow runs, on a repository
+      # whose whole subject is security tooling. dependabot.yml tracks these and
+      # will keep proposing the bump, so pinning does not mean falling behind.
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
 
       - name: Set up Python
-        uses: actions/setup-python@v7
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7
         with:
           python-version: "3.12"
 
-      - name: Extract image URLs from README
-        id: urls
-        run: |
-          python - <<'EOF'
-          import re
-          from pathlib import Path
-          text = Path("README.md").read_text()
-          urls = sorted(set(
-              u for u in re.findall(r'https://[^\s)"\']+', text)
-              if any(ext in u for ext in (".svg", ".png", ".jpg", ".jpeg", ".webp"))
-              or any(d in u for d in ("vercel.app", "rshah.org", "demolab.com", "img.shields.io", "repo-widget", "github-profile-summary"))
-          ))
-          Path(".urls.txt").write_text("\n".join(urls) + ("\n" if urls else ""))
-          print(f"Found {len(urls)} image URLs to check")
-          EOF
+      # Replaces a status-code-only sweep over image URLs, which passed a badge
+      # that had been rendering "404: badge not found" behind an HTTP 200.
+      # The validator checks every URL on the page, reads badge bodies, and
+      # reconciles the contribution ledger against a dated ground-truth snapshot.
+      - name: Validate README
+        run: python scripts/validate_readme.py README.md ${{ inputs.strict && '--strict' || '' }}
 
-      - name: Check all image URLs return 200
-        run: |
-          if [ ! -s .urls.txt ]; then
-            echo "No image URLs found to validate." && exit 0
-          fi
-          failures=0
-          while read -r url; do
-            code=$(curl -sL -o /dev/null -w "%{http_code}" --max-time 20 "$url")
-            [ "$code" = "200" ] || { echo "DEAD ($code): $url"; failures=$((failures+1)); }
-          done < .urls.txt
-          if [ "$failures" -gt 0 ]; then
-            echo "::error::$failures image URL(s) returned a non-200 status."
-            exit 1
-          fi
-          echo "All image URLs returned HTTP 200."
+      # The step above is only as good as the checks inside it, and a check that
+      # cannot fail still reports success. This asserts the opposite: it breaks
+      # the validator on purpose, one defect at a time, and fails unless the
+      # specific check that ought to catch each one does. It runs first because
+      # a refactor that silently kills a check is otherwise invisible here - the
+      # README would still pass, just less thoroughly than before.
+      - name: Mutation-test the validator
+        run: python scripts/test_validate_readme.py
 
-      - name: Check for known-dead services
+      # A scheduled run that fails prints one line and is gone, so a badge that
+      # dies between pull requests leaves no record of which URL died or when.
+      # Keeping the report as an artifact makes the decay trackable after the
+      # fact instead of only at the moment it is noticed.
+      - name: Keep the URL report
+        if: always()
         run: |
-          if grep -Eq "github-readme-stats\.vercel\.app|github-readme-activity-graph" README.md; then
-            echo "::error::README uses a known-dead badge service (github-readme-stats / activity-graph). Remove it."
-            exit 1
-          fi
-          echo "No known-dead services detected."
+          mkdir -p readme-health
+          python scripts/validate_readme.py README.md --offline \
+            > readme-health/validate.txt 2>&1 || true
+          python scripts/validate_readme.py README.md --list-urls \
+            > readme-health/urls.txt
+          {
+            echo "# README health report"
+            echo
+            echo "Checked $(date -u +%FT%TZ) at commit $GITHUB_SHA"
+            echo
+            echo "## Validation"
+            echo
+            echo '```'
+            cat readme-health/validate.txt
+            echo '```'
+            echo
+            echo "## The $(wc -l < readme-health/urls.txt) URLs checked at this commit"
+            echo
+            echo "Kept so a badge that dies between pull requests can be traced to the"
+            echo "exact URL and the commit it was last known good at."
+            echo
+            sed 's/^/- /' readme-health/urls.txt
+          } > readme-health/report.md
+
+      - name: Upload the report
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: readme-health-${{ github.run_number }}
+          path: readme-health/
+          retention-days: 30
+
+      - name: Summarise
+        if: always()
+        run: |
+          {
+            echo "### README validation"
+            echo
+            echo '```'
+            python scripts/validate_readme.py README.md --offline || true
+            echo '```'
+            echo
+            echo "### Validator self-test"
+            echo
+            echo '```'
+            python scripts/test_validate_readme.py || true
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
