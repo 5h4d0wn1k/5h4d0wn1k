@@ -14,7 +14,7 @@
 <a href="https://github.com/5h4d0wn1k?tab=repositories"><img src="https://img.shields.io/badge/Repos-249-0f172a?style=for-the-badge" alt="249 repositories" /></a>
 <a href="https://github.com/5h4d0wn1k?tab=repositories"><img src="https://img.shields.io/badge/Stars-1%2C025-0f172a?style=for-the-badge" alt="1,025 stars" /></a>
 &nbsp;&nbsp;
-<a href="https://github.com/5h4d0wn1k/5h4d0wn1k/pulls"><img src="https://img.shields.io/badge/Upstream_Merged-97-22d3ee?style=for-the-badge" alt="97 merged upstream pull requests" /></a>
+<img src="https://img.shields.io/badge/OSS_Merged-6-22d3ee?style=for-the-badge" alt="6 merged pull requests to independent open-source projects" />
 &nbsp;&nbsp;
 <img src="https://img.shields.io/github/license/5h4d0wn1k/5h4d0wn1k?style=for-the-badge&label=License&color=22d3ee" alt="License" />
 
@@ -42,7 +42,7 @@ maintainers and security response teams to get them fixed.
 My work is **evidence-first**: every finding ships with a sanitizer transcript or a
 failing upstream test, a duplicate check, and a tested fix. Google has reviewed and
 publicly released one of my reports; another is in review with the Go project.
-**97 merged upstream pull requests** across 249 repositories.
+**6 merged pull requests to independent open-source projects** — Go, protobuf, SymPy, TheAlgorithms/Python, freeCodeCamp, free-programming-books — plus **57 merged** across my own production and open-source organisations.
 
 Alongside that I build and maintain the tooling — ~200 open-source offensive and
 defensive security tools, secure full-stack products, and hardware wireless kits —
@@ -263,21 +263,97 @@ The current effort — **autonomous offensive/defensive security tooling** for a
 
 <table>
   <tr><td width="40%"><b>Contributions</b></td><td><b>3,600+</b> in the last 12 months</td></tr>
-  <tr><td><b>Pull Requests</b></td><td>237 authored · <b>177 merged</b> · <b>97 merged upstream</b> (non-self repos)</td></tr>
+  <tr><td><b>Pull Requests</b></td><td>237 authored · <b>177 merged</b> · <b>6 merged to independent OSS</b> · 57 merged to my own orgs</td></tr>
   <tr><td><b>Repos on GitHub</b></td><td>249 · 231 built from scratch · <b>1,025 stars</b></td></tr>
   <tr><td><b>Organizations</b></td><td>3 orgs · 20 repos (Shadownik · Cuboidsoft · CuboidPilot)</td></tr>
 </table>
 
-Active contributor to major upstream projects:
+### Independent open-source projects
 
-- **TheAlgorithms/Python** — [reversort generic](https://github.com/TheAlgorithms/Python/pull/15402) & [odd-even transposition generic](https://github.com/TheAlgorithms/Python/pull/15405) → **merged**
-- **freeCodeCamp** — [truthy/falsy curriculum fix](https://github.com/freeCodeCamp/freeCodeCamp/pull/70289) → **merged**
-- **pandas** — [GroupBy.agg MultiIndex bug](https://github.com/pandas-dev/pandas/pull/69429) (open)
-- **scipy** — [duplicate CSR entries in bipartite matching](https://github.com/scipy/scipy/pull/26242) (open)
-- **SymPy** — [solve domain fix](https://github.com/sympy/sympy/pull/30567) (merged)
-- **EbookFoundation/free-programming-books** — [dead-link repair via Wayback](https://github.com/EbookFoundation/free-programming-books/pull/13472) (open)
-- **protocolbuffers/protobuf** (Google) — [ProtoJSON Timestamp parse defect #30276](https://github.com/protocolbuffers/protobuf/issues/30276) + [fix PR #30277](https://github.com/protocolbuffers/protobuf/pull/30277) → *see Security Research above*
-- **golang/go** — [encoding/xml ill-formed name emission #81881](https://github.com/golang/go/issues/81881) + [CL 841865](https://go-review.googlesource.com/c/go/+/841865) → *see Security Research above*
+Bugs found by reading the code, reproduced with a failing test, and fixed with a patch
+upstream maintainers can review and merge. These are the projects that accepted my work.
+
+<table>
+<tr>
+  <td width="22%" valign="top"><b>golang/go</b><br><sub>Go standard library</sub></td>
+  <td valign="top">
+    <code>xml.Marshal</code> and <code>EncodeToken</code> emit <b>ill-formed element and
+    attribute names while returning <code>nil</code> error</b> — callers get invalid XML with
+    no way to detect it. Reached from every Go program using <code>encoding/xml</code>.
+    <br><a href="https://github.com/golang/go/issues/81881"><b>Issue #81881</b></a> ·
+    <a href="https://go-review.googlesource.com/c/go/+/841865"><b>CL 841865</b></a>
+    <br><sub>🟡 open — 3 comments, maintainer cross-linked the related family</sub>
+  </td>
+</tr>
+<tr>
+  <td valign="top"><b>protocolbuffers/protobuf</b><br><sub>Google · gRPC</sub></td>
+  <td valign="top">
+    Integer overflow and silent truncation in Java ProtoJSON <code>Timestamps.parse</code>:
+    oversized timezone offsets wrap, <code>&gt;9</code> fractional digits are dropped, and the
+    parser returns a <i>different but valid-looking</i> <code>Timestamp</code> with no error —
+    inconsistent with the C++ parser. Found via integer-overflow audit; fixed with tests.
+    <br><a href="https://github.com/protocolbuffers/protobuf/issues/30276"><b>Issue #30276</b></a> ·
+    <a href="https://github.com/protocolbuffers/protobuf/pull/30277"><b>PR #30277</b></a> <sub>(+99/−10)</sub>
+    <br><sub>🟡 open — mergeable, awaiting maintainer review. Google VRP released it for public disclosure.</sub>
+  </td>
+</tr>
+<tr>
+  <td valign="top"><b>SymPy</b></td>
+  <td valign="top">
+    <code>solve</code> returned solutions outside the domain of a denominator — e.g.
+    <code>x/log(x)</code> returned complex and non-positive values that cannot satisfy the
+    original equation, silently.
+    <br><a href="https://github.com/sympy/sympy/pull/30567"><b>PR #30567</b></a>
+    <br><sub>🟢 <b>merged</b></sub>
+  </td>
+</tr>
+<tr>
+  <td valign="top"><b>TheAlgorithms/Python</b></td>
+  <td valign="top">
+    Made <code>reversort</code> and <code>odd-even transposition sort</code> generic over
+    comparable items, so both work for any ordered type rather than <code>int</code> only —
+    removing an artificial type restriction in two widely-copied algorithm implementations.
+    <br><a href="https://github.com/TheAlgorithms/Python/pull/15402"><b>PR #15402</b></a> ·
+    <a href="https://github.com/TheAlgorithms/Python/pull/15405"><b>PR #15405</b></a>
+    <br><sub>🟢 <b>both merged</b></sub>
+  </td>
+</tr>
+<tr>
+  <td valign="top"><b>freeCodeCamp</b></td>
+  <td valign="top">
+    Corrected a wrong truthy/falsy example and its wording in the JavaScript curriculum —
+    a concept error in material used by millions of learners.
+    <br><a href="https://github.com/freeCodeCamp/freeCodeCamp/pull/70289"><b>PR #70289</b></a>
+    <br><sub>🟢 <b>merged</b></sub>
+  </td>
+</tr>
+<tr>
+  <td valign="top"><b>EbookFoundation/<br>free-programming-books</b></td>
+  <td valign="top">
+    Repaired dead <code>turing.com.br</code> links across the book lists by resolving them
+    through the Wayback Machine.
+    <br><a href="https://github.com/EbookFoundation/free-programming-books/pull/13472"><b>PR #13472</b></a>
+    <br><sub>🟢 <b>merged</b></sub>
+  </td>
+</tr>
+</table>
+
+### Open pull requests
+
+| Project | Finding |
+|---|---|
+| **pandas** | <a href="https://github.com/pandas-dev/pandas/pull/69429">#69429</a> — <code>GroupBy.agg</code> with <code>as_index=False</code> and a MultiIndex column group produces a wrong result shape |
+| **scipy** | <a href="https://github.com/scipy/scipy/pull/26242">#26242</a> — <code>sparse.csgraph</code> mishandles duplicate CSR entries in bipartite matching |
+
+### Professional open-source work
+
+Beyond upstream contributions, **57 merged pull requests** across organisations I build and
+maintain — CuboidSoft, CuboidPilot and TCM-ONE. This is production infrastructure work:
+removing leaked credentials from tracked git history, pinning third-party CI actions to
+immutable revisions, gating production deploys on domain test suites, reversible R2 shadow
+writes for account migration, and automated Android release delivery with a self-repairing
+rollback path. <sub>Listed separately because employer and owned repositories are not
+independent third-party review.</sub>
 
 ---
 
