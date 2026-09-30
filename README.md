@@ -11,11 +11,10 @@
 &nbsp;&nbsp;
 <a href="https://github.com/5h4d0wn1k"><img src="https://img.shields.io/github/followers/5h4d0wn1k?style=for-the-badge&label=Followers&color=22d3ee" alt="Followers" /></a>
 &nbsp;&nbsp;
-<a href="https://github.com/5h4d0wn1k?tab=repositories"><img src="https://img.shields.io/badge/Repositories-0f172a?style=for-the-badge" alt="Repositories-0f172a?style=for-the" /></a>
+<a href="https://github.com/5h4d0wn1k?tab=repositories"><img src="https://img.shields.io/badge/Repos-249-0f172a?style=for-the-badge" alt="249 repositories" /></a>
+<a href="https://github.com/5h4d0wn1k?tab=repositories"><img src="https://img.shields.io/badge/Stars-1%2C025-0f172a?style=for-the-badge" alt="1,025 stars" /></a>
 &nbsp;&nbsp;
-<a href="https://github.com/5h4d0wn1k/5h4d0wn1k/issues"><img src="https://img.shields.io/github/issues/5h4d0wn1k/5h4d0wn1k?style=for-the-badge&label=Issues&color=22d3ee" alt="Issues" /></a>
-&nbsp;&nbsp;
-<a href="https://github.com/5h4d0wn1k/5h4d0wn1k/pulls"><img src="https://img.shields.io/github/issues-pr/5h4d0wn1k/5h4d0wn1k?style=for-the-badge&label=PRs&color=22d3ee" alt="PRs" /></a>
+<a href="https://github.com/5h4d0wn1k/5h4d0wn1k/pulls"><img src="https://img.shields.io/badge/Upstream_Merged-97-22d3ee?style=for-the-badge" alt="97 merged upstream pull requests" /></a>
 &nbsp;&nbsp;
 <img src="https://img.shields.io/github/license/5h4d0wn1k/5h4d0wn1k?style=for-the-badge&label=License&color=22d3ee" alt="License" />
 
@@ -25,7 +24,7 @@
   <a href="https://www.linkedin.com/in/nikhilnagpure24/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn-0A66C2?style=for-the" /></a>
   <a href="https://github.com/5h4d0wn1k"><img src="https://img.shields.io/badge/GitHub-111827?style=for-the-badge&logo=github&logoColor=white" alt="GitHub-111827?style=for-the" /></a>
   <a href="https://cynik-operator.pages.dev"><img src="https://img.shields.io/badge/Portfolio-0891b2?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio-0891b2?style=for-the" /></a>
-  <a href="https://streak-stats.demolab.com?user=5h4d0wn1k"><img src="https://img.shields.io/github/last-commit/5h4d0wn1k/5h4d0wn1k?style=for-the-badge&label=Last+Commit&color=22d3ee" alt="Last Commit" /></a>
+  <img src="https://img.shields.io/github/last-commit/5h4d0wn1k/5h4d0wn1k?style=for-the-badge&label=Profile+Updated&color=22d3ee" alt="Profile last updated" />
   <a href="mailto:nikhilnagpure203@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email-EA4335?style=for-the" /></a>
 </p>
 
