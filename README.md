@@ -201,9 +201,9 @@ The current effort — **autonomous offensive/defensive security tooling** for a
 ## 🌍 Open Source Contributions
 
 <table>
-  <tr><td width="40%"><b>Contributions</b></td><td><b>3,000+ in 2026</b> · 174 active days this year</td></tr>
-  <tr><td><b>Pull Requests</b></td><td>200+ authored · <b>150+ merged</b></td></tr>
-  <tr><td><b>Repos on GitHub</b></td><td>243 · 230 built from scratch · 770+ total stars</td></tr>
+  <tr><td width="40%"><b>Contributions</b></td><td><b>3,600+</b> in the last 12 months</td></tr>
+  <tr><td><b>Pull Requests</b></td><td>237 authored · <b>177 merged</b> · <b>97 merged upstream</b> (non-self repos)</td></tr>
+  <tr><td><b>Repos on GitHub</b></td><td>249 · 231 built from scratch · <b>1,025 stars</b></td></tr>
   <tr><td><b>Organizations</b></td><td>3 orgs · 20 repos (Shadownik · Cuboidsoft · CuboidPilot)</td></tr>
 </table>
 
@@ -215,6 +215,53 @@ Active contributor to major upstream projects:
 - **scipy** — [duplicate CSR entries in bipartite matching](https://github.com/scipy/scipy/pull/26242) (open)
 - **SymPy** — [solve domain fix](https://github.com/sympy/sympy/pull/30567) (merged)
 - **EbookFoundation/free-programming-books** — [dead-link repair via Wayback](https://github.com/EbookFoundation/free-programming-books/pull/13472) (open)
+- **protocolbuffers/protobuf** (Google) — [ProtoJSON Timestamp parse defect #30276](https://github.com/protocolbuffers/protobuf/issues/30276) + [fix PR #30277](https://github.com/protocolbuffers/protobuf/pull/30277) → *see Security Research above*
+- **golang/go** — [encoding/xml ill-formed name emission #81881](https://github.com/golang/go/issues/81881) + [CL 841865](https://go-review.googlesource.com/c/go/+/841865) → *see Security Research above*
+
+---
+
+## 🔬 Security Research & Vulnerability Disclosure
+
+I research **memory-safety and authorization-boundary defects** in widely-deployed infrastructure — cluster control planes, network-facing daemons, and serialization libraries. The bar I hold: a finding is real when it reproduces under a sanitizer or fails an upstream unit test, and it ships with a tested fix. A theoretical attack scenario is not a finding.
+
+**Method:** source audit of bounds/length handling → minimal reproducer → ASan/UBSan confirmation → duplicate check → private disclosure → verified fix.
+
+### Publicly disclosed work
+
+<table>
+<tr>
+  <td width="26%" valign="top"><b>protobuf-java</b><br><sub>Google · gRPC</sub></td>
+  <td valign="top">
+    Integer-overflow and silent-truncation audit of <code>Timestamps.parse</code> in the Java ProtoJSON parser.
+    Oversized timezone offsets overflow and wrap; <code>&gt;9</code> fractional digits are silently truncated —
+    producing a different-but-valid <code>Timestamp</code> with no error, inconsistent with the C++ parser.
+    <br><br>
+    <a href="https://github.com/protocolbuffers/protobuf/issues/30276"><b>Issue #30276</b></a> ·
+    <a href="https://github.com/protocolbuffers/protobuf/pull/30277"><b>PR #30277</b></a> <sub>(+99/−10, awaiting review)</sub>
+    <br><sub>Reported to Google VRP (ref 567495093); Google reviewed it and released it for public disclosure.</sub>
+  </td>
+</tr>
+<tr>
+  <td valign="top"><b>Go stdlib</b><br><sub>encoding/xml</sub></td>
+  <td valign="top">
+    <code>xml.Marshal</code> and <code>EncodeToken</code> emit <b>ill-formed element and attribute names
+    while returning a nil error</b> — invalid XML leaves the encoder with no way for callers to detect it.
+    Standard library, affects every Go program using <code>encoding/xml</code>.
+    <br><br>
+    <a href="https://github.com/golang/go/issues/81881"><b>Issue #81881</b></a> ·
+    <a href="https://go-review.googlesource.com/c/go/+/841865"><b>CL 841865</b></a> <sub>(under review)</sub>
+  </td>
+</tr>
+</table>
+
+### Also under private disclosure
+
+Additional findings in **Kubernetes admission control** and **embedded/network daemon memory safety** are in
+coordinated private disclosure with the respective security response teams. Details are available on request
+once each advisory is published.
+
+> **Disclosure policy:** no finding is made public before the affected project has had a fair opportunity to
+> ship a fix. Undisclosed reports are never discussed publicly, including here.
 
 ---
 
