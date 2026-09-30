@@ -4,7 +4,7 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f172a,50:020617,100:0f172a&height=230&section=header&text=Nikhil%20Nagpure&fontSize=48&fontColor=22d3ee&animation=fadeIn&desc=5h4d0wn1k%20%7C%20Security%20Engineer%20%7C%20Systems%20Builder&descSize=20&descAlignY=62" width="100%" alt="Nikhil Nagpure" />
 
 <!-- ── Typing rotator ──────────────────────────────────────── -->
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=2600&pause=900&color=22d3ee&center=true&vCenter=true&width=740&lines=Offensive+Security+Practitioner;Autonomous+Red-Team+Tooling;AI%2FLLM+Security+Engineering;Hardware+%2B+Wireless+Pentesting;Open+Source+Contributor;Founder+%40+Shadownik" width="100%" alt="Offensive Security Practitioner, Autonomous Red-Team Tooling, AI/LLM Security Engineering, Hardware   Wireless Pentesting, Open Source Contributor, Founder @ Shadownik" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=2600&pause=900&color=22d3ee&center=true&vCenter=true&width=740&lines=Vulnerability+Research+%26+Coordinated+Disclosure;Memory+Safety+%26+Fuzzing;Offensive+Security+Practitioner;AI%2FLLM+Security+Engineering;Hardware+%2B+Wireless+Pentesting;97+Merged+Upstream+PRs" width="100%" alt="Vulnerability Research &amp; Coordinated Disclosure, Memory Safety &amp; Fuzzing, Offensive Security Practitioner, AI/LLM Security Engineering, Hardware &amp; Wireless Pentesting, 97 Merged Upstream PRs" />
 
 <!-- ── Stats strip ─────────────────────────────────────────── -->
 <img src="https://komarev.com/ghpvc/?username=5h4d0wn1k&label=PROFILE+VIEWS&color=22d3ee&style=for-the-badge" alt="Profile views" />
@@ -35,9 +35,19 @@
 
 ## 🛡️ About Me
 
-Security engineer and founder building offensive/defensive tooling, secure
-full-stack products, and hardware wireless kits — with ~200 open-source security
-tools shipped and a focus on systems that stay maintainable as they grow.
+Security engineer and **vulnerability researcher**. I find memory-safety and
+authorization-boundary defects in widely-deployed infrastructure — cluster control
+planes, network-facing daemons, and serialization libraries — and work with upstream
+maintainers and security response teams to get them fixed.
+
+My work is **evidence-first**: every finding ships with a sanitizer transcript or a
+failing upstream test, a duplicate check, and a tested fix. Google has reviewed and
+publicly released one of my reports; another is in review with the Go project.
+**97 merged upstream pull requests** across 249 repositories.
+
+Alongside that I build and maintain the tooling — ~200 open-source offensive and
+defensive security tools, secure full-stack products, and hardware wireless kits —
+with a focus on systems that stay maintainable as they grow.
 
 <table>
   <tr>
@@ -63,7 +73,7 @@ tools shipped and a focus on systems that stay maintainable as they grow.
   <tr>
     <td align="center"><b>Focus</b></td>
     <td>
-      Offensive Security · Red Teaming · API Security · AI/LLM Security · Hardware-Wireless Pentesting · Secure Full-Stack
+      <b>Vulnerability Research · Memory Safety · Fuzzing</b> · Offensive Security · Red Teaming · API Security · AI/LLM Security · Hardware-Wireless Pentesting · Secure Full-Stack
     </td>
   </tr>
   <tr>
@@ -79,6 +89,9 @@ tools shipped and a focus on systems that stay maintainable as they grow.
 <p align="center">
   <b>Focus areas</b>
   <br/>
+  <img src="https://img.shields.io/badge/Vulnerability%20Research-9f1239?style=flat-square" alt="Vulnerability Research-9f1239?style=flat-square" />
+  <img src="https://img.shields.io/badge/Memory%20Safety-c026d3?style=flat-square" alt="Memory Safety-c026d3?style=flat-square" />
+  <img src="https://img.shields.io/badge/Fuzzing-7c3aed?style=flat-square" alt="Fuzzing-7c3aed?style=flat-square" />
   <img src="https://img.shields.io/badge/Offensive%20Security-red?style=flat-square" alt="Offensive Security-red?style=flat" />
   <img src="https://img.shields.io/badge/Red%20Teaming-darkred?style=flat-square" alt="Red Teaming-darkred?style=flat" />
   <img src="https://img.shields.io/badge/API%20Security-22d3ee?style=flat-square" alt="API Security-22d3ee?style=flat" />
@@ -94,6 +107,8 @@ tools shipped and a focus on systems that stay maintainable as they grow.
   <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript-3178C6?style=flat" />
   <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=flat-square&logo=c%2B%2B&logoColor=white" alt="C++-00599C?style=flat" />
   <img src="https://img.shields.io/badge/Solidity-363636?style=flat-square&logo=solidity&logoColor=white" alt="Solidity-363636?style=flat" />
+  <img src="https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white" alt="Go-00ADD8?style=flat-square" />
+  <img src="https://img.shields.io/badge/C-A8B9CC?style=flat-square&logo=c&logoColor=white" alt="C-A8B9CC?style=flat-square" />
   <img src="https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white" alt="Rust-000000?style=flat" />
   <img src="https://img.shields.io/badge/Dart-0175C2?style=flat-square&logo=dart&logoColor=white" alt="Dart-0175C2?style=flat" />
   <img src="https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=mysql&logoColor=white" alt="SQL-4479A1?style=flat" />
@@ -115,6 +130,53 @@ tools shipped and a focus on systems that stay maintainable as they grow.
   <img src="https://img.shields.io/badge/DEFCON%20Franklin%20Security-black?style=flat-square" alt="DEFCON Franklin Security-black?style=flat" />
   <img src="https://img.shields.io/badge/Cyber%20Expert%20-%20Ministry%20of%20Home%20Affairs%20(India)-1f5c8b?style=flat-square" alt="Cyber Expert - Ministry of Home Affairs (India)-1f5c8b?style=flat" />
 </p>
+
+---
+
+## 🔬 Security Research & Vulnerability Disclosure
+
+I research **memory-safety and authorization-boundary defects** in widely-deployed infrastructure — cluster control planes, network-facing daemons, and serialization libraries. The bar I hold: a finding is real when it reproduces under a sanitizer or fails an upstream unit test, and it ships with a tested fix. A theoretical attack scenario is not a finding.
+
+**Method:** source audit of bounds/length handling → minimal reproducer → ASan/UBSan confirmation → duplicate check → private disclosure → verified fix.
+
+### Publicly disclosed work
+
+<table>
+<tr>
+  <td width="26%" valign="top"><b>protobuf-java</b><br><sub>Google · gRPC</sub></td>
+  <td valign="top">
+    Integer-overflow and silent-truncation audit of <code>Timestamps.parse</code> in the Java ProtoJSON parser.
+    Oversized timezone offsets overflow and wrap; <code>&gt;9</code> fractional digits are silently truncated —
+    producing a different-but-valid <code>Timestamp</code> with no error, inconsistent with the C++ parser.
+    <br><br>
+    <a href="https://github.com/protocolbuffers/protobuf/issues/30276"><b>Issue #30276</b></a> ·
+    <a href="https://github.com/protocolbuffers/protobuf/pull/30277"><b>PR #30277</b></a> <sub>(+99/−10, awaiting review)</sub>
+    <br><sub>Reported to Google VRP (ref 567495093); Google reviewed it and released it for public disclosure.</sub>
+  </td>
+</tr>
+<tr>
+  <td valign="top"><b>Go stdlib</b><br><sub>encoding/xml</sub></td>
+  <td valign="top">
+    <code>xml.Marshal</code> and <code>EncodeToken</code> emit <b>ill-formed element and attribute names
+    while returning a nil error</b> — invalid XML leaves the encoder with no way for callers to detect it.
+    Standard library, affects every Go program using <code>encoding/xml</code>.
+    <br><br>
+    <a href="https://github.com/golang/go/issues/81881"><b>Issue #81881</b></a> ·
+    <a href="https://go-review.googlesource.com/c/go/+/841865"><b>CL 841865</b></a> <sub>(under review)</sub>
+  </td>
+</tr>
+</table>
+
+### Also under private disclosure
+
+Additional findings in **Kubernetes admission control** and **embedded/network daemon memory safety** are in
+coordinated private disclosure with the respective security response teams. Details are available on request
+once each advisory is published.
+
+> **Disclosure policy:** no finding is made public before the affected project has had a fair opportunity to
+> ship a fix. Undisclosed reports are never discussed publicly, including here.
+
+---
 
 ## 🧰 Tech Stack
 
@@ -217,51 +279,6 @@ Active contributor to major upstream projects:
 - **EbookFoundation/free-programming-books** — [dead-link repair via Wayback](https://github.com/EbookFoundation/free-programming-books/pull/13472) (open)
 - **protocolbuffers/protobuf** (Google) — [ProtoJSON Timestamp parse defect #30276](https://github.com/protocolbuffers/protobuf/issues/30276) + [fix PR #30277](https://github.com/protocolbuffers/protobuf/pull/30277) → *see Security Research above*
 - **golang/go** — [encoding/xml ill-formed name emission #81881](https://github.com/golang/go/issues/81881) + [CL 841865](https://go-review.googlesource.com/c/go/+/841865) → *see Security Research above*
-
----
-
-## 🔬 Security Research & Vulnerability Disclosure
-
-I research **memory-safety and authorization-boundary defects** in widely-deployed infrastructure — cluster control planes, network-facing daemons, and serialization libraries. The bar I hold: a finding is real when it reproduces under a sanitizer or fails an upstream unit test, and it ships with a tested fix. A theoretical attack scenario is not a finding.
-
-**Method:** source audit of bounds/length handling → minimal reproducer → ASan/UBSan confirmation → duplicate check → private disclosure → verified fix.
-
-### Publicly disclosed work
-
-<table>
-<tr>
-  <td width="26%" valign="top"><b>protobuf-java</b><br><sub>Google · gRPC</sub></td>
-  <td valign="top">
-    Integer-overflow and silent-truncation audit of <code>Timestamps.parse</code> in the Java ProtoJSON parser.
-    Oversized timezone offsets overflow and wrap; <code>&gt;9</code> fractional digits are silently truncated —
-    producing a different-but-valid <code>Timestamp</code> with no error, inconsistent with the C++ parser.
-    <br><br>
-    <a href="https://github.com/protocolbuffers/protobuf/issues/30276"><b>Issue #30276</b></a> ·
-    <a href="https://github.com/protocolbuffers/protobuf/pull/30277"><b>PR #30277</b></a> <sub>(+99/−10, awaiting review)</sub>
-    <br><sub>Reported to Google VRP (ref 567495093); Google reviewed it and released it for public disclosure.</sub>
-  </td>
-</tr>
-<tr>
-  <td valign="top"><b>Go stdlib</b><br><sub>encoding/xml</sub></td>
-  <td valign="top">
-    <code>xml.Marshal</code> and <code>EncodeToken</code> emit <b>ill-formed element and attribute names
-    while returning a nil error</b> — invalid XML leaves the encoder with no way for callers to detect it.
-    Standard library, affects every Go program using <code>encoding/xml</code>.
-    <br><br>
-    <a href="https://github.com/golang/go/issues/81881"><b>Issue #81881</b></a> ·
-    <a href="https://go-review.googlesource.com/c/go/+/841865"><b>CL 841865</b></a> <sub>(under review)</sub>
-  </td>
-</tr>
-</table>
-
-### Also under private disclosure
-
-Additional findings in **Kubernetes admission control** and **embedded/network daemon memory safety** are in
-coordinated private disclosure with the respective security response teams. Details are available on request
-once each advisory is published.
-
-> **Disclosure policy:** no finding is made public before the affected project has had a fair opportunity to
-> ship a fix. Undisclosed reports are never discussed publicly, including here.
 
 ---
 
