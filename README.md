@@ -34,20 +34,6 @@
 
 ## 🛡️ About Me
 
-Security engineer and **vulnerability researcher**. I find memory-safety and
-authorization-boundary defects in widely-deployed infrastructure — cluster control
-planes, network-facing daemons, and serialization libraries — and work with upstream
-maintainers and security response teams to get them fixed.
-
-My work is **evidence-first**: every finding ships with a sanitizer transcript or a
-failing upstream test, a duplicate check, and a tested fix. Google has reviewed and
-publicly released one of my reports; another is in review with the Go project.
-**6 merged pull requests to independent open-source projects** — Go, protobuf, SymPy, TheAlgorithms/Python, freeCodeCamp, free-programming-books — plus **57 merged** across my own production and open-source organisations.
-
-Alongside that I build and maintain the tooling — ~200 open-source offensive and
-defensive security tools, secure full-stack products, and hardware wireless kits —
-with a focus on systems that stay maintainable as they grow.
-
 <table>
   <tr>
     <td width="200" align="center"><b>Identity</b></td>
@@ -132,51 +118,6 @@ with a focus on systems that stay maintainable as they grow.
 
 ---
 
-## 🔬 Security Research & Vulnerability Disclosure
-
-I research **memory-safety and authorization-boundary defects** in widely-deployed infrastructure — cluster control planes, network-facing daemons, and serialization libraries. The bar I hold: a finding is real when it reproduces under a sanitizer or fails an upstream unit test, and it ships with a tested fix. A theoretical attack scenario is not a finding.
-
-**Method:** source audit of bounds/length handling → minimal reproducer → ASan/UBSan confirmation → duplicate check → private disclosure → verified fix.
-
-### Publicly disclosed work
-
-<table>
-<tr>
-  <td width="26%" valign="top"><b>protobuf-java</b><br><sub>Google · gRPC</sub></td>
-  <td valign="top">
-    Integer-overflow and silent-truncation audit of <code>Timestamps.parse</code> in the Java ProtoJSON parser.
-    Oversized timezone offsets overflow and wrap; <code>&gt;9</code> fractional digits are silently truncated —
-    producing a different-but-valid <code>Timestamp</code> with no error, inconsistent with the C++ parser.
-    <br><br>
-    <a href="https://github.com/protocolbuffers/protobuf/issues/30276"><b>Issue #30276</b></a> ·
-    <a href="https://github.com/protocolbuffers/protobuf/pull/30277"><b>PR #30277</b></a> <sub>(+99/−10, awaiting review)</sub>
-    <br><sub>Reported to Google VRP (ref 567495093); Google reviewed it and released it for public disclosure.</sub>
-  </td>
-</tr>
-<tr>
-  <td valign="top"><b>Go stdlib</b><br><sub>encoding/xml</sub></td>
-  <td valign="top">
-    <code>xml.Marshal</code> and <code>EncodeToken</code> emit <b>ill-formed element and attribute names
-    while returning a nil error</b> — invalid XML leaves the encoder with no way for callers to detect it.
-    Standard library, affects every Go program using <code>encoding/xml</code>.
-    <br><br>
-    <a href="https://github.com/golang/go/issues/81881"><b>Issue #81881</b></a> ·
-    <a href="https://go-review.googlesource.com/c/go/+/841865"><b>CL 841865</b></a> <sub>(under review)</sub>
-  </td>
-</tr>
-</table>
-
-### Also under private disclosure
-
-Additional findings in **Kubernetes admission control** and **embedded/network daemon memory safety** are in
-coordinated private disclosure with the respective security response teams. Details are available on request
-once each advisory is published.
-
-> **Disclosure policy:** no finding is made public before the affected project has had a fair opportunity to
-> ship a fix. Undisclosed reports are never discussed publicly, including here.
-
----
-
 ## 🧰 Tech Stack
 
 <p align="center">
@@ -237,8 +178,8 @@ The current effort — **autonomous offensive/defensive security tooling** for a
 ### Technical Lead — [CuboidSoft](https://cuboidsoft.in) (Jan 2025 - Present)
 - Lead an IT software company delivering custom web applications, mobile apps, and digital solutions for SMEs and startups across multiple domains.
 - Lead full-stack architecture and development for client projects using Next.js, Node.js, PostgreSQL, and modern frontend frameworks to build secure, scalable applications.
-- Own development workflows end-to-end: Git version control, CI/CD pipelines, code reviews, and cloud/VPS deployment.
-- Ship on company strategy, branding, and go-to-market — service packaging, proposal writing, and technical client presentations.
+- Built everything from scratch with my co founder
+- Building thecodemunk.in , app.thecodemunk.in , pilot.cuboidsoft.in , cai.cuboidsoft.in 
 
 ### Founder — [Shadownik](https://cynik-operator.pages.dev) · Freelance Venture (Jun 2024 - Present)
 - Build and scale a multi-service freelance venture across cybersecurity, full-stack engineering, cloud deployment, and digital operations.
@@ -248,6 +189,7 @@ The current effort — **autonomous offensive/defensive security tooling** for a
 ### Founding SWE — Pawan Technologies (Sep 2025 - Feb 2026)
 - Developed responsive production web apps and scalable backend APIs.
 - Built integrations, database workflows, and cloud-ready deployment pipelines.
+- Built davcreations.in , https://kaarveragroindia.com/ 
 
 ### Offensive Cybersecurity Intern — InLighnX Global Pvt. Ltd. (Jun 2025 - Dec 2025)
 - Performed web application security assessments (OWASP Top 10, Burp Suite, Metasploit), threat modeling, and red-team simulations.
@@ -256,104 +198,6 @@ The current effort — **autonomous offensive/defensive security tooling** for a
 ### Ethical Hacking Intern — Internship Studio (Nov 2023 - Dec 2023)
 - Identified and mitigated XSS vulnerabilities in production web applications; authored remediation reports.
 - Designed practical security lab environments simulating real-world attack scenarios.
-
----
-
-## 🌍 Open Source Contributions
-
-<table>
-  <tr><td width="40%"><b>Contributions</b></td><td><b>3,600+</b> in the last 12 months</td></tr>
-  <tr><td><b>Pull Requests</b></td><td>237 authored · <b>177 merged</b> · <b>6 merged to independent OSS</b> · 57 merged to my own orgs</td></tr>
-  <tr><td><b>Repos on GitHub</b></td><td>249 · 231 built from scratch · <b>1,025 stars</b></td></tr>
-  <tr><td><b>Organizations</b></td><td>3 orgs · 20 repos (Shadownik · Cuboidsoft · CuboidPilot)</td></tr>
-</table>
-
-### Independent open-source projects
-
-Bugs found by reading the code, reproduced with a failing test, and fixed with a patch
-upstream maintainers can review and merge. These are the projects that accepted my work.
-
-<table>
-<tr>
-  <td width="22%" valign="top"><b>golang/go</b><br><sub>Go standard library</sub></td>
-  <td valign="top">
-    <code>xml.Marshal</code> and <code>EncodeToken</code> emit <b>ill-formed element and
-    attribute names while returning <code>nil</code> error</b> — callers get invalid XML with
-    no way to detect it. Reached from every Go program using <code>encoding/xml</code>.
-    <br><a href="https://github.com/golang/go/issues/81881"><b>Issue #81881</b></a> ·
-    <a href="https://go-review.googlesource.com/c/go/+/841865"><b>CL 841865</b></a>
-    <br><sub>🟡 open — 3 comments, maintainer cross-linked the related family</sub>
-  </td>
-</tr>
-<tr>
-  <td valign="top"><b>protocolbuffers/protobuf</b><br><sub>Google · gRPC</sub></td>
-  <td valign="top">
-    Integer overflow and silent truncation in Java ProtoJSON <code>Timestamps.parse</code>:
-    oversized timezone offsets wrap, <code>&gt;9</code> fractional digits are dropped, and the
-    parser returns a <i>different but valid-looking</i> <code>Timestamp</code> with no error —
-    inconsistent with the C++ parser. Found via integer-overflow audit; fixed with tests.
-    <br><a href="https://github.com/protocolbuffers/protobuf/issues/30276"><b>Issue #30276</b></a> ·
-    <a href="https://github.com/protocolbuffers/protobuf/pull/30277"><b>PR #30277</b></a> <sub>(+99/−10)</sub>
-    <br><sub>🟡 open — mergeable, awaiting maintainer review. Google VRP released it for public disclosure.</sub>
-  </td>
-</tr>
-<tr>
-  <td valign="top"><b>SymPy</b></td>
-  <td valign="top">
-    <code>solve</code> returned solutions outside the domain of a denominator — e.g.
-    <code>x/log(x)</code> returned complex and non-positive values that cannot satisfy the
-    original equation, silently.
-    <br><a href="https://github.com/sympy/sympy/pull/30567"><b>PR #30567</b></a>
-    <br><sub>🟢 <b>merged</b></sub>
-  </td>
-</tr>
-<tr>
-  <td valign="top"><b>TheAlgorithms/Python</b></td>
-  <td valign="top">
-    Made <code>reversort</code> and <code>odd-even transposition sort</code> generic over
-    comparable items, so both work for any ordered type rather than <code>int</code> only —
-    removing an artificial type restriction in two widely-copied algorithm implementations.
-    <br><a href="https://github.com/TheAlgorithms/Python/pull/15402"><b>PR #15402</b></a> ·
-    <a href="https://github.com/TheAlgorithms/Python/pull/15405"><b>PR #15405</b></a>
-    <br><sub>🟢 <b>both merged</b></sub>
-  </td>
-</tr>
-<tr>
-  <td valign="top"><b>freeCodeCamp</b></td>
-  <td valign="top">
-    Corrected a wrong truthy/falsy example and its wording in the JavaScript curriculum —
-    a concept error in material used by millions of learners.
-    <br><a href="https://github.com/freeCodeCamp/freeCodeCamp/pull/70289"><b>PR #70289</b></a>
-    <br><sub>🟢 <b>merged</b></sub>
-  </td>
-</tr>
-<tr>
-  <td valign="top"><b>EbookFoundation/<br>free-programming-books</b></td>
-  <td valign="top">
-    Repaired dead <code>turing.com.br</code> links across the book lists by resolving them
-    through the Wayback Machine.
-    <br><a href="https://github.com/EbookFoundation/free-programming-books/pull/13472"><b>PR #13472</b></a>
-    <br><sub>🟢 <b>merged</b></sub>
-  </td>
-</tr>
-</table>
-
-### Open pull requests
-
-| Project | Finding |
-|---|---|
-| **pandas** | <a href="https://github.com/pandas-dev/pandas/pull/69429">#69429</a> — <code>GroupBy.agg</code> with <code>as_index=False</code> and a MultiIndex column group produces a wrong result shape |
-| **scipy** | <a href="https://github.com/scipy/scipy/pull/26242">#26242</a> — <code>sparse.csgraph</code> mishandles duplicate CSR entries in bipartite matching |
-
-### Professional open-source work
-
-Beyond upstream contributions, **57 merged pull requests** across organisations I build and
-maintain — CuboidSoft, CuboidPilot and TCM-ONE. This is production infrastructure work:
-removing leaked credentials from tracked git history, pinning third-party CI actions to
-immutable revisions, gating production deploys on domain test suites, reversible R2 shadow
-writes for account migration, and automated Android release delivery with a self-repairing
-rollback path. <sub>Listed separately because employer and owned repositories are not
-independent third-party review.</sub>
 
 ---
 
