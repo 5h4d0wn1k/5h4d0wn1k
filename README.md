@@ -4,7 +4,7 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f172a,50:020617,100:0f172a&height=230&section=header&text=Nikhil%20Nagpure&fontSize=48&fontColor=22d3ee&animation=fadeIn&desc=5h4d0wn1k%20%7C%20Security%20Engineer%20%7C%20Systems%20Builder&descSize=20&descAlignY=62" width="100%" alt="Nikhil Nagpure" />
 
 <!-- ── Typing rotator ──────────────────────────────────────── -->
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=2600&pause=900&color=22d3ee&center=true&vCenter=true&width=740&lines=Vulnerability+Research+%26+Coordinated+Disclosure;Memory+Safety+%26+Fuzzing;Offensive+Security+Practitioner;AI%2FLLM+Security+Engineering;Hardware+%2B+Wireless+Pentesting;97+Merged+Upstream+PRs" width="100%" alt="Vulnerability Research &amp; Coordinated Disclosure, Memory Safety &amp; Fuzzing, Offensive Security Practitioner, AI/LLM Security Engineering, Hardware &amp; Wireless Pentesting, 97 Merged Upstream PRs" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=2600&pause=900&color=22d3ee&center=true&vCenter=true&width=740&lines=Vulnerability+Research+%26+Coordinated+Disclosure;Memory+Safety+%26+Fuzzing;Offensive+Security+Practitioner;AI%2FLLM+Security+Engineering;Hardware+%2B+Wireless+Pentesting;Founder+of+Build+For+Good;97+Merged+Upstream+PRs" width="100%" alt="Vulnerability Research &amp; Coordinated Disclosure, Memory Safety &amp; Fuzzing, Offensive Security Practitioner, AI/LLM Security Engineering, Hardware &amp; Wireless Pentesting, Founder of Build For Good, 97 Merged Upstream PRs" />
 
 <!-- ── Stats strip ─────────────────────────────────────────── -->
 <img src="https://komarev.com/ghpvc/?username=5h4d0wn1k&label=PROFILE+VIEWS&color=22d3ee&style=for-the-badge" alt="Profile views" />
@@ -67,6 +67,15 @@
       <b>ApiSecPlatform</b> (enterprise API security testing) ·
       <b>Portable Wireless Pentest Toolkit</b> (ESP32-based) ·
       <b>SentinelWall</b> AI threat detection
+    </td>
+  </tr>
+  <tr>
+    <td align="center"><b>Foundations</b></td>
+    <td>
+      Founder — <b><a href="https://buildforgood.world">Build For Good</a></b>, a global multidisciplinary community turning real problems into collective action ·
+      Builder — <b>Social Services</b>, an independent volunteer &amp; impact platform
+      <br/>
+      <sub>Two things I care about beyond shipping code. Details below.</sub>
     </td>
   </tr>
 </table>
@@ -147,6 +156,73 @@
 | **[cybersecurity-framework](https://github.com/5h4d0wn1k/cybersecurity-framework)** | Interactive map of everything in cybersecurity — 27 domains, 776 categories, 1,067 curated offensive & defensive tools | ![Stars](https://img.shields.io/github/stars/5h4d0wn1k/cybersecurity-framework?color=22d3ee) |
 | **ApiSecPlatform** | Enterprise API security platform for automated testing, threat insights, and OWASP-aligned checks | — |
 | **Portable Wireless Pentesting Toolkit** | ESP32-based field pentesting device for wireless assessments and protocol testing | — |
+
+---
+
+## 🌍 Build For Good — A Global Community
+
+<div align="center">
+
+<a href="https://buildforgood.world">
+  <img src="https://img.shields.io/badge/buildforgood.world-Visit%20the%20community-0f766e?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Visit buildforgood.world" />
+</a>
+<a href="https://buildforgood.world/manifesto">
+  <img src="https://img.shields.io/badge/Manifesto-Read-22d3ee?style=for-the-badge" alt="Read the manifesto" />
+</a>
+<a href="https://buildforgood.world/membership">
+  <img src="https://img.shields.io/badge/Membership-Apply-0f172a?style=for-the-badge" alt="Apply for membership" />
+</a>
+
+</div>
+
+**Build For Good** is a global, multidisciplinary community I founded to turn real problems into collective action — health, energy, water, education, climate, security, software, and everything in between.
+
+Not just software. Mathematicians, doctors, engineers, artists, lawyers, farmers, founders and philosophers in the same room, because the problems that matter need all of them. A security researcher, a civil engineer and a physician look at the same problem in three completely different ways — and that collision is usually where the best answer is hiding.
+
+> **Become more capable, never less.**
+
+### Why it exists
+
+I'd been building a lot of things and working on a lot of projects, but I never had the right room — real exposure to new ideas, people who share the ambition, a team to compete globally with. I wanted to build things that actually matter, and I couldn't find a place that put good people, professionals, founders and different sectors together the way I imagined it. So I started one.
+
+### How it works
+
+| Step | What happens |
+|:----:|--------------|
+| **1. Bring** | Anyone, anywhere can bring a real problem — not just software. Every submission gets an honest, human answer within 72 hours. |
+| **2. Assemble** | We frame it honestly and gather the disciplines the problem actually needs — including the people living the problem. |
+| **3. Build & share** | A small team researches, prototypes, tests and deploys — then measures whether it truly helped. What we learn, we share openly where we can. |
+
+- **Character is the gate, not credentials.** Twelve dimensions: honesty, kindness, curiosity, ambition, competence, humility, critical thinking, collaboration, responsibility, discipline, growth mindset, positive intent.
+- **Membership:** application → a real conversation → 30-day trial → confirmed member.
+- **Labs** form around problems: open source, nonprofit, or startup. Credit is recorded permanently, impact is measured and shared.
+- **Not a members-only club:** bring a problem and join a Lab without becoming a member.
+
+### The kinds of projects
+
+Open-source projects. Portfolio projects. Projects that help people. Projects that help ourselves. Startups. Projects for fun. Projects to try something new. Projects supporting charities, organizations and other communities.
+
+You don't need to be an expert or have everything figured out to contribute — curiosity, initiative, kindness and a willingness to learn go a very long way.
+
+### 🤝 Social Services — a separate project
+
+[**socialservices**](https://github.com/5h4d0wn1k/socialservices) · [social.buildforgood.world](https://social.buildforgood.world)
+
+A volunteer &amp; social-impact platform: discover projects, join teams, log your hours, and turn time into measurable change. React + Vite + TypeScript with Supabase auth and role-aware dashboards.
+
+> ⚠️ **This is not part of Build For Good.** It's an independent social services project, currently parked on a `buildforgood.world` subdomain purely for convenience — the domain placement is temporary and does not imply affiliation.
+
+### House rules
+
+<div align="center">
+
+<sub>
+  <b>Budget:</b> 0 &nbsp;·&nbsp; <b>Effort:</b> comparably low &nbsp;·&nbsp; <b>Ambition:</b> dangerously expensive 💀<br/>
+  <b>Only requirement:</b> touch grass occasionally. We're building for good, not becoming the bug.<br/>
+  <b>No pain, no gain. No guts, no glory.</b>
+</sub>
+
+</div>
 
 ---
 
@@ -232,6 +308,7 @@ The current effort — **autonomous offensive/defensive security tooling** for a
   <a href="https://www.linkedin.com/in/nikhilnagpure24/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn-0A66C2?style=for-the" /></a>
   <a href="https://github.com/5h4d0wn1k"><img src="https://img.shields.io/badge/GitHub-111827?style=for-the-badge&logo=github&logoColor=white" alt="GitHub-111827?style=for-the" /></a>
   <a href="https://cynik-operator.pages.dev"><img src="https://img.shields.io/badge/Portfolio-0891b2?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio-0891b2?style=for-the" /></a>
+  <a href="https://buildforgood.world"><img src="https://img.shields.io/badge/Build%20For%20Good-0f766e?style=for-the-badge&logo=earth&logoColor=white" alt="Build For Good" /></a>
   <a href="mailto:nikhilnagpure203@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email-EA4335?style=for-the" /></a>
 </p>
 
