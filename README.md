@@ -72,8 +72,8 @@
   <tr>
     <td align="center"><b>Foundations</b></td>
     <td>
-      Founder — <b><a href="https://buildforgood.world">Build For Good</a></b>, a global multidisciplinary community turning real problems into collective action ·
-      Builder — <b>Social Services</b>, an independent volunteer &amp; impact platform
+      Founder — <b><a href="https://buildforgood.world">Build For Good</a></b>, a global community building things that matter ·
+      Builder — <b><a href="https://social.buildforgood.world">Social Services</a></b>, a volunteer &amp; social-impact platform
       <br/>
       <sub>Two things I care about beyond shipping code. Details below.</sub>
     </td>
@@ -159,58 +159,39 @@
 
 ---
 
-## 🌍 Build For Good — A Global Community
+## 🌍 Build For Good
 
 <div align="center">
 
 <a href="https://buildforgood.world">
-  <img src="https://img.shields.io/badge/buildforgood.world-Visit%20the%20community-0f766e?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Visit buildforgood.world" />
+  <img src="https://img.shields.io/badge/buildforgood.world-Visit-0f766e?style=for-the-badge&logo=googlechrome&logoColor=white" alt="buildforgood.world" />
 </a>
-<a href="https://buildforgood.world/manifesto">
-  <img src="https://img.shields.io/badge/Manifesto-Read-22d3ee?style=for-the-badge" alt="Read the manifesto" />
-</a>
-<a href="https://buildforgood.world/membership">
-  <img src="https://img.shields.io/badge/Membership-Apply-0f172a?style=for-the-badge" alt="Apply for membership" />
+&nbsp;
+<a href="https://social.buildforgood.world">
+  <img src="https://img.shields.io/badge/social.buildforgood.world-Visit-16a34a?style=for-the-badge&logo=googlechrome&logoColor=white" alt="social.buildforgood.world" />
 </a>
 
 </div>
 
-**Build For Good** is a global, multidisciplinary community I founded to turn real problems into collective action — health, energy, water, education, climate, security, software, and everything in between.
+**The idea:** a global community of kind, smart, proactive people who build things together that make the world better. Not just software — health, energy, water, education, climate, security, art, law, agriculture, business, philosophy. Bring every discipline into one room, because the best answers usually come from where fields collide.
 
-Not just software. Mathematicians, doctors, engineers, artists, lawyers, farmers, founders and philosophers in the same room, because the problems that matter need all of them. A security researcher, a civil engineer and a physician look at the same problem in three completely different ways — and that collision is usually where the best answer is hiding.
+**Why it exists:** I'd been building a lot of things, but I never had the right environment — real exposure to new ideas, people who share the ambition, a team to compete globally with. I wanted to build things that actually matter, and couldn't find the place that put good people, professionals, founders and different sectors together the way I imagined it. So I started one.
 
-> **Become more capable, never less.**
+**How it works:** anyone, anywhere brings a real problem. We assemble the disciplines it actually needs — including the people living it. A small team then researches, prototypes, tests and deploys, and measures whether it truly helped.
 
-### Why it exists
+**Who it's for:** visionary, ambitious, tenacious, proactive, humble, happy and chill people. People with goals and a sense of purpose, who want to do something big or good — for themselves and for others. People still learning, and people who have already built things.
 
-I'd been building a lot of things and working on a lot of projects, but I never had the right room — real exposure to new ideas, people who share the ambition, a team to compete globally with. I wanted to build things that actually matter, and I couldn't find a place that put good people, professionals, founders and different sectors together the way I imagined it. So I started one.
+**The standard:** become more capable, never less. Character is the gate, not credentials.
 
-### How it works
+> Open source, portfolio work, helping people, startups, projects just for fun, projects for charities and other communities — it all counts. You don't need to be an expert or have everything figured out. Curiosity, initiative, kindness and a willingness to learn go a long way.
 
-| Step | What happens |
-|:----:|--------------|
-| **1. Bring** | Anyone, anywhere can bring a real problem — not just software. Every submission gets an honest, human answer within 72 hours. |
-| **2. Assemble** | We frame it honestly and gather the disciplines the problem actually needs — including the people living the problem. |
-| **3. Build & share** | A small team researches, prototypes, tests and deploys — then measures whether it truly helped. What we learn, we share openly where we can. |
+### 🤝 Social Services
 
-- **Character is the gate, not credentials.** Twelve dimensions: honesty, kindness, curiosity, ambition, competence, humility, critical thinking, collaboration, responsibility, discipline, growth mindset, positive intent.
-- **Membership:** application → a real conversation → 30-day trial → confirmed member.
-- **Labs** form around problems: open source, nonprofit, or startup. Credit is recorded permanently, impact is measured and shared.
-- **Not a members-only club:** bring a problem and join a Lab without becoming a member.
+[**social.buildforgood.world**](https://social.buildforgood.world)
 
-### The kinds of projects
+**The idea:** give your time, change lives. A volunteering and social-impact platform where people find projects worth their hours, join teams, log what they contribute, and turn scattered goodwill into measurable change.
 
-Open-source projects. Portfolio projects. Projects that help people. Projects that help ourselves. Startups. Projects for fun. Projects to try something new. Projects supporting charities, organizations and other communities.
-
-You don't need to be an expert or have everything figured out to contribute — curiosity, initiative, kindness and a willingness to learn go a very long way.
-
-### 🤝 Social Services — a separate project
-
-[**socialservices**](https://github.com/5h4d0wn1k/socialservices) · [social.buildforgood.world](https://social.buildforgood.world)
-
-A volunteer &amp; social-impact platform: discover projects, join teams, log your hours, and turn time into measurable change. React + Vite + TypeScript with Supabase auth and role-aware dashboards.
-
-> ⚠️ **This is not part of Build For Good.** It's an independent social services project, currently parked on a `buildforgood.world` subdomain purely for convenience — the domain placement is temporary and does not imply affiliation.
+A separate project, currently hosted at `social.buildforgood.world`.
 
 ### House rules
 
