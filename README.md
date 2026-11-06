@@ -4,7 +4,7 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f172a,50:020617,100:0f172a&height=230&section=header&text=Nikhil%20Nagpure&fontSize=48&fontColor=22d3ee&animation=fadeIn&desc=5h4d0wn1k%20%7C%20Security%20Engineer%20%7C%20Systems%20Builder&descSize=20&descAlignY=62" width="100%" alt="Nikhil Nagpure" />
 
 <!-- ── Typing rotator ──────────────────────────────────────── -->
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=2600&pause=900&color=22d3ee&center=true&vCenter=true&width=740&lines=Vulnerability+Research+%26+Coordinated+Disclosure;Memory+Safety+%26+Fuzzing;Offensive+Security+Practitioner;AI%2FLLM+Security+Engineering;Hardware+%2B+Wireless+Pentesting;Founder+of+Build+For+Good;97+Merged+Upstream+PRs" width="100%" alt="Vulnerability Research &amp; Coordinated Disclosure, Memory Safety &amp; Fuzzing, Offensive Security Practitioner, AI/LLM Security Engineering, Hardware &amp; Wireless Pentesting, Founder of Build For Good, 97 Merged Upstream PRs" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=2600&pause=900&color=22d3ee&center=true&vCenter=true&width=740&lines=Vulnerability+Research+%26+Coordinated+Disclosure;Memory+Safety+%26+Fuzzing;Offensive+Security+Practitioner;AI%2FLLM+Security+Engineering;Hardware+%2B+Wireless+Pentesting;Founder+of+Build+For+Good;341+Merged+Pull+Requests" width="100%" alt="Vulnerability Research &amp; Coordinated Disclosure, Memory Safety &amp; Fuzzing, Offensive Security Practitioner, AI/LLM Security Engineering, Hardware &amp; Wireless Pentesting, Founder of Build For Good, 341 Merged Pull Requests" />
 
 <!-- ── Stats strip ─────────────────────────────────────────── -->
 <img src="https://komarev.com/ghpvc/?username=5h4d0wn1k&label=PROFILE+VIEWS&color=22d3ee&style=for-the-badge" alt="Profile views" />
@@ -12,9 +12,9 @@
 <a href="https://github.com/5h4d0wn1k"><img src="https://img.shields.io/github/followers/5h4d0wn1k?style=for-the-badge&label=Followers&color=22d3ee" alt="Followers" /></a>
 &nbsp;&nbsp;
 <a href="https://github.com/5h4d0wn1k?tab=repositories"><img src="https://img.shields.io/badge/Repos-249-0f172a?style=for-the-badge" alt="249 repositories" /></a>
-<a href="https://github.com/5h4d0wn1k?tab=repositories"><img src="https://img.shields.io/badge/Stars-1%2C025-0f172a?style=for-the-badge" alt="1,025 stars" /></a>
+<a href="https://github.com/5h4d0wn1k?tab=repositories"><img src="https://img.shields.io/badge/Stars-1%2C308-0f172a?style=for-the-badge" alt="1,308 stars" /></a>
 &nbsp;&nbsp;
-<img src="https://img.shields.io/badge/OSS_Merged-6-22d3ee?style=for-the-badge" alt="6 merged pull requests to independent open-source projects" />
+<img src="https://img.shields.io/badge/OSS_Merged-16-22d3ee?style=for-the-badge" alt="16 merged pull requests to independent open-source projects" />
 &nbsp;&nbsp;
 <img src="https://img.shields.io/github/license/5h4d0wn1k/5h4d0wn1k?style=for-the-badge&label=License&color=22d3ee" alt="License" />
 
@@ -51,8 +51,8 @@
     <td>
       Technical Lead @ <b>CuboidSoft</b> ·
       Founder @ <b>Shadownik</b> ·
-      Founding SWE @ <b>Pawan Technologies</b><br/>
-      <sub>Previously: Offensive Security Intern @ InLighnX · Ethical Hacking Intern @ Internship Studio</sub>
+      Founder @ <b><a href="https://buildforgood.world">Build For Good</a></b><br/>
+      <sub>Previously: Founding SWE @ Pawan Technologies (Sep 2025 – Feb 2026) · Offensive Security Intern @ InLighnX · Ethical Hacking Intern @ Internship Studio</sub>
     </td>
   </tr>
   <tr>
@@ -231,6 +231,11 @@ The current effort — **autonomous offensive/defensive security tooling** for a
 ---
 
 ## 👨‍💻 Experience
+
+### Founder — [Build For Good](https://buildforgood.world) (2026 - Present)
+- Founded a global, multidisciplinary community that turns real problems into collective action across health, energy, water, education, climate and technology.
+- Built the platform and operating model behind buildforgood.world: problem intake, discipline matching, project Labs, and a character-first membership process.
+- Also building Social Services, a separate volunteer and social-impact platform at social.buildforgood.world.
 
 ### Technical Lead — [CuboidSoft](https://cuboidsoft.in) (Jan 2025 - Present)
 - Lead an IT software company delivering custom web applications, mobile apps, and digital solutions for SMEs and startups across multiple domains.
