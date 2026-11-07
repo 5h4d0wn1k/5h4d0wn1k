@@ -21,7 +21,7 @@
 <br/>
 
 <p>
-  <a href="https://www.linkedin.com/in/nikhilnagpure24/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn-0A66C2?style=for-the" /></a>
+  <a href="https://www.linkedin.com/in/nikhilnagpure24/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge" alt="LinkedIn-0A66C2?style=for-the" /></a>
   <a href="https://github.com/5h4d0wn1k"><img src="https://img.shields.io/badge/GitHub-111827?style=for-the-badge&logo=github&logoColor=white" alt="GitHub-111827?style=for-the" /></a>
   <a href="https://cynik-operator.pages.dev"><img src="https://img.shields.io/badge/Portfolio-0891b2?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio-0891b2?style=for-the" /></a>
   <img src="https://img.shields.io/github/last-commit/5h4d0wn1k/5h4d0wn1k?style=for-the-badge&label=Profile+Updated&color=22d3ee" alt="Profile last updated" />
@@ -106,7 +106,7 @@
   <img src="https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white" alt="Rust-000000?style=flat" />
   <img src="https://img.shields.io/badge/Dart-0175C2?style=flat-square&logo=dart&logoColor=white" alt="Dart-0175C2?style=flat" />
   <img src="https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=mysql&logoColor=white" alt="SQL-4479A1?style=flat" />
-  <img src="https://img.shields.io/badge/Java-E34F26?style=flat-square&logo=java&logoColor=white" alt="Java-E34F26?style=flat" />
+  <img src="https://img.shields.io/badge/Java-E34F26?style=flat-square&logo=openjdk&logoColor=white" alt="Java-E34F26?style=flat" />
 </p>
 
 <p align="center">
@@ -291,10 +291,10 @@ The current effort — **autonomous offensive/defensive security tooling** for a
 ## 📬 Let's Connect
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/nikhilnagpure24/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn-0A66C2?style=for-the" /></a>
+  <a href="https://www.linkedin.com/in/nikhilnagpure24/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge" alt="LinkedIn-0A66C2?style=for-the" /></a>
   <a href="https://github.com/5h4d0wn1k"><img src="https://img.shields.io/badge/GitHub-111827?style=for-the-badge&logo=github&logoColor=white" alt="GitHub-111827?style=for-the" /></a>
   <a href="https://cynik-operator.pages.dev"><img src="https://img.shields.io/badge/Portfolio-0891b2?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio-0891b2?style=for-the" /></a>
-  <a href="https://buildforgood.world"><img src="https://img.shields.io/badge/Build%20For%20Good-0f766e?style=for-the-badge&logo=earth&logoColor=white" alt="Build For Good" /></a>
+  <a href="https://buildforgood.world"><img src="https://img.shields.io/badge/Build%20For%20Good-0f766e?style=for-the-badge&logo=googleearth&logoColor=white" alt="Build For Good" /></a>
   <a href="mailto:nikhilnagpure203@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email-EA4335?style=for-the" /></a>
 </p>
 
