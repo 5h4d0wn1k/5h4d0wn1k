@@ -41,3 +41,4 @@ ci(healthcheck): validate all badge URLs on PR
 - Keep alignment/section structure consistent (tables, centered blocks).
 - Prefer verified, cached badge services over dynamic ones.
 - Preserve the dark slate + cyan `#22d3ee` theme.
+<!-- gate-check probe -->
