@@ -1,8 +1,14 @@
 name: README Health Check
 
 on:
+  # No `paths` filter on pull_request, deliberately.
+  #
+  # Branch protection on `main` requires the "Validate README links and badges"
+  # check for every PR. A path filter means any PR that does not touch README.md
+  # or .github/** never reports that check -- so it sits BLOCKED forever and the
+  # only way through is an admin override. The job takes seconds, so it runs on
+  # every PR instead. The filter stays on `push` to keep `main` quiet.
   pull_request:
-    paths: ["README.md", ".github/**"]
   push:
     branches: [main]
     paths: ["README.md", ".github/**"]
