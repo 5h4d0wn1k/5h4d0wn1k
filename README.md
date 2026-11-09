@@ -272,8 +272,6 @@ The current effort — **autonomous offensive/defensive security tooling** for a
   <img height="160em" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=5h4d0wn1k&theme=tokyonight&hide_border=true" alt="Repositories per language summary card" />
   <img height="160em" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=5h4d0wn1k&theme=tokyonight&hide_border=true" alt="Most committed language summary card" />
   <br/>
-  <img src="https://streak-stats.demolab.com?user=5h4d0wn1k&theme=tokyonight&hide_border=true&background=0F172A" alt="Streak Stats" />
-  <br/>
   <img src="https://ghchart.rshah.org/22d3ee/5h4d0wn1k" width="100%" alt="Contribution Heatmap" />
 </div>
 
